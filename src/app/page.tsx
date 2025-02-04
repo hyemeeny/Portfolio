@@ -1,5 +1,16 @@
-import styles from "./page.module.css";
+import Container from "@/components/Layout/Container";
+import s from "./page.module.scss";
 
 export default function Home() {
-  return <div className={styles.page}>포트폴리오</div>;
+  return (
+    <main className={s.mainPage}>
+      <Container>포트폴리오</Container>
+      <ul>
+        <li>aa</li>
+        <li>aa</li>
+        <li>aa</li>
+        <li>aa</li>
+      </ul>
+    </main>
+  );
 }
