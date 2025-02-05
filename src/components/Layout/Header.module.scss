@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: $mainColor;
+  border-bottom: 1px solid $borderColor;
+  padding: 0.5rem;
+  gap: 1rem;
+
+  .vsCodeIcon {
+    font-size: 1.25rem;
+    color: #37a8f2;
+  }
+
+  .headerTitle {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    gap: 1rem;
+  }
+}
