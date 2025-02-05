@@ -1,0 +1,64 @@
+.sideTab {
+  height: calc(100vh - 38px);
+  background-color: $mainColor;
+  border-left: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
+  min-width: 200px;
+
+  .explorer {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .dropDown {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.3rem 2rem 0.3rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    background-color: $mainColor;
+
+    li {
+      &.active {
+        background-color: $subColor;
+      }
+
+      a {
+        font-size: 0.875rem;
+        padding: 0.3rem 2rem 0.3rem 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        svg {
+          font-size: 1.25rem;
+        }
+
+        .reactIcon {
+          color: #00dcff;
+        }
+
+        .htmlIcon {
+          color: #e7521f;
+        }
+
+        .jsIcon {
+          color: #f7e025;
+        }
+
+        .scssIcon {
+          color: #ce6b9c;
+        }
+      }
+    }
+  }
+}

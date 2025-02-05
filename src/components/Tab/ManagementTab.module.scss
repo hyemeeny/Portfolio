@@ -1,0 +1,30 @@
+.managementTab {
+  background-color: $mainColor;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    li {
+      padding: 0.8rem;
+      color: #838383;
+
+      &.active {
+        border-left: 2px solid $pointColor;
+        background-color: $subColor;
+        color: $fontColor;
+      }
+
+      &:hover {
+        color: $fontColor;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a {
+        font-size: 2rem;
+        @include flex-center;
+      }
+    }
+  }
+}

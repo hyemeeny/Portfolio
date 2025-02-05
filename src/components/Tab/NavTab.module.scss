@@ -1,0 +1,51 @@
+.navTab {
+  width: 100%;
+
+  ul {
+    display: flex;
+    background-color: $mainColor;
+    border-bottom: 1px solid $borderColor;
+
+    li {
+      border-right: 1px solid $borderColor;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &.active {
+        border-top: 1px solid $pointColor;
+        background-color: $subColor;
+        border-bottom: none;
+      }
+
+      a {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        svg {
+          font-size: 1.25rem;
+        }
+
+        .reactIcon {
+          color: #00dcff;
+        }
+
+        .htmlIcon {
+          color: #e7521f;
+        }
+
+        .jsIcon {
+          color: #f7e025;
+        }
+
+        .scssIcon {
+          color: #ce6b9c;
+        }
+      }
+    }
+  }
+}
