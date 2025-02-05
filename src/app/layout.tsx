@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-//import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "@/styles/globals.scss";
+import s from "./Home.module.scss";
+import NavTab from "@/components/Tab/NavTab";
+import SideTab from "@/components/Tab/SideTab";
+import Header from "@/components/Layout/Header";
+import ManagementTab from "@/components/Tab/ManagementTab";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+const SourceSans3 = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "PORTFOLIO",
@@ -24,7 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={SourceSans3.className}>
+        <Header />
+        <div className={s.tabWrap}>
+          <ManagementTab />
+          <SideTab />
+          <div className={s.mainWrap}>
+            <NavTab />
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
