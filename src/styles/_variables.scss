@@ -1,20 +1,19 @@
 @import "mixins";
 
 // Colors
-$background: #ffffff;
-$mainColor: #dddddd;
-$subColor: #000000;
+$background: #24292f;
+$mainColor: #1f2428;
+$subColor: #24292f;
+$fontColor: #dfdfdf;
+// $borderColor: #161a1d;
+$borderColor: #24292f;
+$pointColor: #fa826c;
 
 .container {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 3rem 2rem;
   transition: all 1s ease;
   @include tablet {
-    padding: 0 24px;
-    @include mobile {
-      padding: 0 16px;
-    }
+    padding: 2rem 1rem;
   }
 }
 
