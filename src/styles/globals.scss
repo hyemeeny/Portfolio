@@ -9,8 +9,7 @@ body {
   background-color: $background;
   color: $fontColor;
   word-break: keep-all;
-  // font-family: var(--font-pretendard), Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
-  //   "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   @include mobile {
     min-width: 375px;
   }

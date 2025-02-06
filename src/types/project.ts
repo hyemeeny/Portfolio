@@ -3,7 +3,4 @@ export interface ProjectProps {
   title: string;
   description: string;
   image: string;
-  skill?: string;
-  gif?: string;
-  description2?: string;
 }
