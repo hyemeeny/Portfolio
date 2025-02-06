@@ -2,34 +2,33 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import s from "./ManagementTab.module.scss";
-import { IoDocumentsOutline, IoSearch, IoGitBranchOutline } from "react-icons/io5";
-import { MdOutlineWidgets } from "react-icons/md";
+import s from "./Navbar.module.scss";
+import { FaReact, FaHtml5, FaJs, FaSass } from "react-icons/fa";
 
-const ManagementTab = () => {
+const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={s.managementTab}>
+    <nav className={s.navbar}>
       <ul>
         <li className={pathname === "/" ? s.active : ""}>
           <Link href="/">
-            <IoDocumentsOutline />
+            <FaReact className={s.reactIcon} /> home.tsx
           </Link>
         </li>
         <li className={pathname.startsWith("/about") ? s.active : ""}>
           <Link href="/about">
-            <IoSearch />
+            <FaHtml5 className={s.htmlIcon} /> about.html
           </Link>
         </li>
         <li className={pathname.startsWith("/project") ? s.active : ""}>
           <Link href="/project">
-            <IoGitBranchOutline />
+            <FaJs className={s.jsIcon} /> project.js
           </Link>
         </li>
         <li className={pathname.startsWith("/contact") ? s.active : ""}>
           <Link href="/contact">
-            <MdOutlineWidgets />
+            <FaSass className={s.scssIcon} /> contact.scss
           </Link>
         </li>
       </ul>
@@ -37,4 +36,4 @@ const ManagementTab = () => {
   );
 };
 
-export default ManagementTab;
+export default Navbar;

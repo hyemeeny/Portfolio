@@ -2,33 +2,34 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import s from "./NavTab.module.scss";
-import { FaReact, FaHtml5, FaJs, FaSass } from "react-icons/fa";
+import s from "./Leftbar.module.scss";
+import { IoDocumentsOutline, IoSearch, IoGitBranchOutline } from "react-icons/io5";
+import { MdOutlineWidgets } from "react-icons/md";
 
-const NavTab = () => {
+const Leftbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={s.navTab}>
+    <nav className={s.leftbar}>
       <ul>
         <li className={pathname === "/" ? s.active : ""}>
           <Link href="/">
-            <FaReact className={s.reactIcon} /> home.tsx
+            <IoDocumentsOutline />
           </Link>
         </li>
         <li className={pathname.startsWith("/about") ? s.active : ""}>
           <Link href="/about">
-            <FaHtml5 className={s.htmlIcon} /> about.html
+            <IoSearch />
           </Link>
         </li>
         <li className={pathname.startsWith("/project") ? s.active : ""}>
           <Link href="/project">
-            <FaJs className={s.jsIcon} /> project.js
+            <IoGitBranchOutline />
           </Link>
         </li>
         <li className={pathname.startsWith("/contact") ? s.active : ""}>
           <Link href="/contact">
-            <FaSass className={s.scssIcon} /> contact.scss
+            <MdOutlineWidgets />
           </Link>
         </li>
       </ul>
@@ -36,4 +37,4 @@ const NavTab = () => {
   );
 };
 
-export default NavTab;
+export default Leftbar;

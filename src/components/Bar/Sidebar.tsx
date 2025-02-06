@@ -2,12 +2,12 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import s from "./SideTab.module.scss";
+import s from "./Sidebar.module.scss";
 import { FaReact, FaHtml5, FaJs, FaSass } from "react-icons/fa";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { useState } from "react";
 
-const SideTab = () => {
+const Sidebar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(true);
 
@@ -16,7 +16,7 @@ const SideTab = () => {
   };
 
   return (
-    <nav className={s.sideTab}>
+    <nav className={s.sidebar}>
       <p className={s.explorer}>EXPLORER</p>
       <h4 onClick={handleClick} className={s.dropDown}>
         {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />} PORTFOLIO
@@ -49,4 +49,4 @@ const SideTab = () => {
   );
 };
 
-export default SideTab;
+export default Sidebar;
