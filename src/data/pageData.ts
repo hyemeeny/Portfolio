@@ -28,7 +28,7 @@ export const travelmakerPageData = [
     image: "/images/travelmaker/activity.gif",
   },
   {
-    title: "공용 작업",
+    title: "공통 작업",
     description: ["스타일 관리 효율성을 높이기 위해 SCSS Variables을 통한 반응형 및 Global Style 추가하였습니다."],
   },
 ];
