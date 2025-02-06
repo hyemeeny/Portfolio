@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import s from "./button.module.scss";
+import s from "./Button.module.scss";
 import clsx from "clsx";
 
 type ButtonType = "fill" | "empty";
