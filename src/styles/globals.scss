@@ -9,8 +9,23 @@ body {
   background-color: $background;
   color: $fontColor;
   word-break: keep-all;
-  font-family: "Noto Sans KR", sans-serif;
   @include mobile {
     min-width: 375px;
   }
 }
+
+/* ----------------------- start scrollbar ----------------------- */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333536;
+  border-radius: 0.4rem;
+}
+/* ----------------------- end scrollbar ----------------------- */
