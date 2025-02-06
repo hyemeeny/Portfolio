@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
-import { Source_Sans_3 } from "next/font/google";
+import { JetBrains_Mono, Noto_Sans_KR } from "next/font/google";
+import clsx from "clsx";
 import "@/styles/globals.scss";
 import s from "./Home.module.scss";
-import NavTab from "@/components/Tab/NavTab";
-import SideTab from "@/components/Tab/SideTab";
+import Navbar from "@/components/Bar/Navbar";
+import Sidebar from "@/components/Bar/Sidebar";
 import Header from "@/components/Layout/Header";
-import ManagementTab from "@/components/Tab/ManagementTab";
+import Leftbar from "@/components/Bar/Leftbar";
 
-const SourceSans3 = Source_Sans_3({ subsets: ["latin"] });
+const JetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
+
+const NotoSansKR = Noto_Sans_KR({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: "PORTFOLIO",
@@ -21,13 +30,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={SourceSans3.className}>
+      <body className={clsx(NotoSansKR.className, JetBrainsMono.className)}>
         <Header />
         <div className={s.tabWrap}>
-          <ManagementTab />
-          <SideTab />
+          <Leftbar />
+          <Sidebar />
           <div className={s.mainWrap}>
-            <NavTab />
+            <Navbar />
             {children}
           </div>
         </div>
