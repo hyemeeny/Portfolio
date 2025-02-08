@@ -1,20 +1,51 @@
 .header {
-  display: flex;
-  align-items: center;
+  @include flex-between;
+  padding: 0.5rem;
   background-color: $mainColor;
   border-bottom: 1px solid $borderColor;
-  padding: 0.5rem;
-  gap: 1rem;
 
-  .vsCodeIcon {
-    font-size: 1.25rem;
-    color: #37a8f2;
-  }
-
-  .headerTitle {
+  .titleWrap {
     display: flex;
     align-items: center;
-    font-size: 0.875rem;
     gap: 1rem;
+
+    .vsCodeIcon {
+      font-size: 1.25rem;
+      color: #37a8f2;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+      gap: 1rem;
+    }
+  }
+
+  .name {
+    font-size: 0.875rem;
+  }
+
+  .dotWrap {
+    display: flex;
+    gap: 5px;
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 100px;
+
+      &.red {
+        background-color: #ec6a5e;
+      }
+
+      &.yellow {
+        background-color: #f4be4f;
+      }
+
+      &.green {
+        background-color: #61c555;
+      }
+    }
   }
 }
