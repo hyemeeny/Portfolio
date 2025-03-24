@@ -1,20 +1,11 @@
 "use client";
 
-import Button from "@/components/Button/Button";
+import Link from "next/link";
 import s from "./Home.module.scss";
 import { Typewriter } from "react-simple-typewriter";
-import Link from "next/link";
+import Button from "@/components/Button/Button";
 
 const Home = () => {
-  const handleType = (count: number) => {
-    // access word count number
-    console.log(count);
-  };
-
-  const handleDone = () => {
-    console.log(`Done after 5 loops!`);
-  };
-
   return (
     <main className={s.mainPage}>
       <div className={s.homeTitleWrap}>
@@ -27,8 +18,6 @@ const Home = () => {
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}
-            onLoopDone={handleDone}
-            onType={handleType}
           />
         </h1>
         <div className={s.buttonWrap}>
