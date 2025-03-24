@@ -15,6 +15,12 @@ export const projectData: ProjectProps[] = [
     image: "/images/travelmaker/travelmaker.jpg",
     category: "팀 프로젝트",
   },
+  // {
+  //   id: 3,
+  //   title: "📅 Taskify",
+  //   description: "팀원들 간 소통을 원활히 하며 업무 효율성을 증대시킬 수 있는 협업 툴 및 일정 관리 시스템",
+  //   image: "/images/taskify/taskify.jpg",
+  // },
   {
     id: 3,
     title: "🎓 NEUL STUDIO",
@@ -33,6 +39,14 @@ export const projectData: ProjectProps[] = [
   },
   {
     id: 5,
+    title: "🎓 한국보건행정학회",
+    description: "한국학술정보 퍼블리싱 작업물",
+    image: "/images/publish/kshpa.org_.png",
+    category: "퍼블리싱",
+    link: "https://kshpa.org/",
+  },
+  {
+    id: 6,
     title: "🎓 현대영어교육학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/meeso.or.kr_.png",
@@ -40,7 +54,7 @@ export const projectData: ProjectProps[] = [
     link: "https://meeso.or.kr/",
   },
   {
-    id: 6,
+    id: 7,
     title: "🎓 한국노어노문학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/karll.or.kr_.png",
@@ -48,7 +62,7 @@ export const projectData: ProjectProps[] = [
     link: "https://karll.or.kr/",
   },
   {
-    id: 7,
+    id: 8,
     title: "🎓 한국언어정보학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/ksli.or.kr_.png",
@@ -56,7 +70,7 @@ export const projectData: ProjectProps[] = [
     link: "https://ksli.or.kr/",
   },
   {
-    id: 8,
+    id: 9,
     title: "🎓 한국PR학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/kaspr.net_.png",
@@ -64,7 +78,7 @@ export const projectData: ProjectProps[] = [
     link: "http://kaspr.net/",
   },
   {
-    id: 9,
+    id: 10,
     title: "🎓 한국사회교과교육학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/kasse.or.kr_.png",
@@ -72,7 +86,7 @@ export const projectData: ProjectProps[] = [
     link: "https://kasse.or.kr/",
   },
   {
-    id: 10,
+    id: 11,
     title: "🎓 홍익대학교 법학연구소",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/hongiklawcenter.kr_.png",
@@ -80,7 +94,7 @@ export const projectData: ProjectProps[] = [
     link: "https://hongiklawcenter.kr/",
   },
   {
-    id: 11,
+    id: 12,
     title: "🎓 현대영화연구소",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/cocri.hanyang.ac.kr_.png",
@@ -88,7 +102,7 @@ export const projectData: ProjectProps[] = [
     link: "http://cocri.hanyang.ac.kr/",
   },
   {
-    id: 12,
+    id: 13,
     title: "🎓 심훈선생기념사업회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/shimhoon.com_.png",
@@ -96,7 +110,7 @@ export const projectData: ProjectProps[] = [
     link: "https://shimhoon.com/",
   },
   {
-    id: 13,
+    id: 14,
     title: "🎓 산림경영정보학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/ksfmi.co.kr_.png",
@@ -104,7 +118,7 @@ export const projectData: ProjectProps[] = [
     link: "https://ksfmi.co.kr/",
   },
   {
-    id: 14,
+    id: 15,
     title: "🎓 아프리카미래학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/afs.re.kr_.png",
@@ -112,7 +126,7 @@ export const projectData: ProjectProps[] = [
     link: "https://afs.re.kr/",
   },
   {
-    id: 15,
+    id: 16,
     title: "🎓 한국운동역학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/kssb.kr_.png",
@@ -120,7 +134,7 @@ export const projectData: ProjectProps[] = [
     link: "https://xn--3e0bv5jy2qywaw94cna74s.kr/",
   },
   {
-    id: 16,
+    id: 17,
     title: "🎓 한국민족운동사학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/hknm.or.kr_.png",
@@ -128,7 +142,7 @@ export const projectData: ProjectProps[] = [
     link: "http://hknm.or.kr/",
   },
   {
-    id: 17,
+    id: 18,
     title: "🎓 부경역사연구소",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/pkh.co.kr_.png",
@@ -136,7 +150,7 @@ export const projectData: ProjectProps[] = [
     link: "http://pkh.co.kr/",
   },
   {
-    id: 18,
+    id: 19,
     title: "🎓 한국지명학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/placename.or.kr_.png",
@@ -144,7 +158,7 @@ export const projectData: ProjectProps[] = [
     link: "https://placename.or.kr/",
   },
   {
-    id: 19,
+    id: 20,
     title: "🎓 한말연구학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/hanmal.or.kr_.png",
@@ -152,7 +166,7 @@ export const projectData: ProjectProps[] = [
     link: "https://hanmal.or.kr/",
   },
   {
-    id: 20,
+    id: 21,
     title: "🎓 열처리공학회 학술대회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/ksht.or.kr_.png",
@@ -160,17 +174,11 @@ export const projectData: ProjectProps[] = [
     link: "https://www.ksht.or.kr/cfr/202310/index.asp",
   },
   {
-    id: 21,
+    id: 22,
     title: "🎓 한국광물학회",
     description: "한국학술정보 퍼블리싱 작업물",
     image: "/images/publish/mskorea.or.kr_.png",
     category: "퍼블리싱",
     link: "http://mskorea.or.kr/",
   },
-  // {
-  //   id: 3,
-  //   title: "📅 Taskify",
-  //   description: "팀원들 간 소통을 원활히 하며 업무 효율성을 증대시킬 수 있는 협업 툴 및 일정 관리 시스템",
-  //   image: "/images/taskify/taskify.jpg",
-  // },
 ];
