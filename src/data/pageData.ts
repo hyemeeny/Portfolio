@@ -1,3 +1,47 @@
+export const spaceLinkPageData = [
+  {
+    title: "메인 페이지",
+    description: [
+      "사용자가 부드럽게 화면을 넘길 수 있도록 React-fullpage를 활용해 전체 화면 스크롤을 구현했습니다.",
+      "역동적인 화면 구성을 위해 별과 유성 효과를 추가하고, LottieFiles를 활용해 페이지별로 생동감 있는 애니메이션을 구현했습니다.",
+    ],
+    image: "/images/spaceLink/main.gif",
+  },
+  {
+    title: "회원가입 및 로그인 페이지",
+    description: [
+      "JWT 토큰을 쿠키에 저장하는 인증 방식을 이용한 사용자 로그인 페이지 개발을 통해 보안성 강화하였습니다.",
+      "로그아웃 시 쿠키에 저장된 토큰도 함께 삭제되도록 구현하여, 인증 정보를 바로 제거하고 자동 로그인을 방지하였습니다.",
+    ],
+    image: "/images/spaceLink/login.gif",
+  },
+  {
+    title: "링크 기능",
+    description: [
+      "번들 크기를 줄이고 초기 로딩 속도를 향상시키며 보안을 강화하기 위해, 링크 데이터 패칭을 서버 컴포넌트로 구현하였습니다.",
+      "POST와 PATCH를 Server Action으로 RESTful API를 연동하여 백엔드와의 원활한 데이터 통신을 구현하였습니다.",
+      "공용 모달을 제작하여 코드 중복을 줄이고 웹페이지 사용성 개선하였습니다.",
+      "Zod와 React-Hook-Form으로 유효성 검사를 추가해 사용자 입력의 정확성과 안정성을 강화하였습니다.",
+    ],
+    image: "/images/spaceLink/link.gif",
+  },
+  {
+    title: "폴더 기능",
+    description: ["POST와 PATCH를 Server Action으로 RESTful API를 연동하여 백엔드와의 원활한 데이터 통신을 구현하였습니다."],
+    image: "/images/spaceLink/folder.gif",
+  },
+  {
+    title: "즐겨찾기",
+    description: ["POST와 PATCH를 Server Action으로 RESTful API를 연동하여 백엔드와의 원활한 데이터 통신을 구현하였습니다."],
+    image: "/images/spaceLink/favorite.gif",
+  },
+  {
+    title: "검색 기능",
+    description: ["서버 컴포넌트에서 params를 이용해 검색 기능을 구현하였습니다."],
+    image: "/images/spaceLink/search.gif",
+  },
+];
+
 export const travelmakerPageData = [
   {
     title: "로그인 페이지",
