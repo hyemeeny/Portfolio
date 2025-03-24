@@ -41,7 +41,7 @@
 
       .imageWrap {
         width: 100%;
-        height: 300px;
+        height: 450px;
         position: relative;
         overflow: hidden;
 
@@ -75,10 +75,37 @@
         margin-bottom: 1rem;
         border-bottom: 1px solid $fontColor;
       }
+      .url {
+        .subTitle {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          .github {
+            @include flex-center;
+            margin-top: 0.25rem;
+            transition: all 0.2s ease;
+
+            &:hover {
+              color: $pointColor;
+            }
+          }
+        }
+
+        .link {
+          font-size: 1.25rem;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: $pointColor;
+          }
+        }
+      }
 
       .techStack {
         ul {
           display: flex;
+          flex-wrap: wrap;
           gap: 1rem;
 
           li {
