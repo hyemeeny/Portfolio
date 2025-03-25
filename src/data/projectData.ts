@@ -3,14 +3,14 @@ import { ProjectProps } from "@/types/project";
 export const projectData: ProjectProps[] = [
   {
     id: 1,
-    title: "SpaceLink",
+    title: "🚀 SpaceLink",
     description: "우주의 별들처럼, 나만의 특별한 링크를 한 곳에 모을 수 있는 개인화된 링크 관리 플랫폼입니다.",
     image: "/images/spaceLink/spaceLink.jpg",
     category: "🙋‍♀️ Personal",
   },
   {
     id: 2,
-    title: "TRAVEL MAKER",
+    title: "✈️ TRAVEL MAKER",
     description: "사용자가 판매자가 되어 체험을 만들고, 동시에 체험자가 되어 체험을 예약하는 체험 예약 플랫폼입니다.",
     image: "/images/travelmaker/travelmaker.jpg",
     category: "🧑‍🤝‍🧑 Team",
