@@ -1,15 +1,17 @@
-.marginTop {
-  margin-top: 1.5rem;
-}
+.aboutPage {
+  .marginTop {
+    margin-top: 1.5rem;
+  }
 
-.paddingSmall {
-  padding-left: 1rem;
-}
-
-.paddingMedium {
-  padding-left: 2rem;
-}
-
-.paddingLarge {
-  padding-left: 3rem;
+  .introduce,
+  .workExperience,
+  .education {
+    font-size: 1.125rem;
+    @include tablet {
+      font-size: 1rem;
+      @include mobile {
+        font-size: 0.875rem;
+      }
+    }
+  }
 }

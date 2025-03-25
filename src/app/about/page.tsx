@@ -1,21 +1,20 @@
 import Tag from "@/components/About/Tag";
 import s from "./About.module.scss";
 import Container from "@/components/Layout/Container";
-import clsx from "clsx";
 
 const About = () => {
   return (
-    <section>
+    <section className={s.aboutPage}>
       <Container>
         <Tag tagName="html" hasAttr attr="lang" attrValue="ko" />
-        <Tag tagName="head" className={s.paddingSmall} />
-        <Tag tagName="title" className={s.paddingMedium}>
-          <p>안녕하세요. 프론트엔드 개발자 지혜민입니다!</p>
+        <Tag tagName="head" padding="medium" />
+        <Tag tagName="title" padding="large">
+          <p>안녕하세요! 프론트엔드 개발자 지혜민입니다.</p>
         </Tag>
-        <Tag tagName="title" isClosed className={s.paddingMedium} />
-        <Tag tagName="head" isClosed className={s.paddingSmall} />
-        <Tag tagName="body" className={s.paddingSmall} />
-        <Tag tagName="heaeder" hasAttr attr="class" attrValue="자기소개" className={s.paddingMedium}>
+        <Tag tagName="title" isClosed padding="large" />
+        <Tag tagName="head" isClosed padding="medium" />
+        <Tag tagName="body" padding="medium" />
+        <Tag tagName="heaeder" hasAttr attr="class" attrValue="자기소개" padding="large">
           <ul className={s.introduce}>
             <li>
               <p>안녕하세요!</p>
@@ -31,8 +30,8 @@ const About = () => {
             </li>
           </ul>
         </Tag>
-        <Tag tagName="heaeder" isClosed className={s.paddingMedium} />
-        <Tag tagName="main" hasAttr attr="class" attrValue="경력" className={clsx(s.marginTop, s.paddingMedium)}>
+        <Tag tagName="heaeder" isClosed padding="large" />
+        <Tag tagName="main" hasAttr attr="class" attrValue="경력" padding="large" className={s.marginTop}>
           <ul className={s.workExperience}>
             <li>
               <h3 className={s.title}>
@@ -47,8 +46,8 @@ const About = () => {
             </li>
           </ul>
         </Tag>
-        <Tag tagName="main" isClosed className={s.paddingMedium} />
-        <Tag tagName="footer" hasAttr attr="class" attrValue="교육 및 자격증" className={clsx(s.marginTop, s.paddingMedium)}>
+        <Tag tagName="main" isClosed padding="large" />
+        <Tag tagName="footer" hasAttr attr="class" attrValue="교육 및 자격증" padding="large" className={s.marginTop}>
           <ul className={s.education}>
             <li>
               <h3 className={s.title}>
@@ -63,8 +62,8 @@ const About = () => {
             </li>
           </ul>
         </Tag>
-        <Tag tagName="footer" isClosed className={s.paddingMedium} />
-        <Tag tagName="body" isClosed className={s.paddingSmall} />
+        <Tag tagName="footer" isClosed padding="large" />
+        <Tag tagName="body" isClosed padding="medium" />
         <Tag tagName="html" isClosed />
       </Container>
     </section>
