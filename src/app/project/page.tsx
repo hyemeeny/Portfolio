@@ -13,7 +13,7 @@ import TravelmakerModal from "@/components/Modal/TravelmakerModal";
 
 const Project = () => {
   const [modalType, setModalType] = useState<string>("");
-  const [category, setCategory] = useState<string>("전체");
+  const [category, setCategory] = useState<string>("All");
   const { openModal } = useModalStore();
 
   const handleProjectClick = (project: ProjectProps) => {
@@ -29,30 +29,31 @@ const Project = () => {
   };
 
   const filteredProjects = projectData.filter((project) => {
-    if (category === "전체") return true;
-    if (category === "개인 프로젝트" && project.category === "개인 프로젝트") return true;
-    if (category === "팀 프로젝트" && project.category === "팀 프로젝트") return true;
-    if (category === "퍼블리싱" && project.category === "퍼블리싱") return true;
-    return false;
+    if (category === "All") return true;
+    const categoryText = category.replace(/[^a-zA-Z]/g, "");
+    return project.category.includes(categoryText);
   });
 
   return (
     <section className={s.projectPage}>
       <Container>
-        <nav className={s.category}>
-          <button onClick={() => setCategory("전체")} className={category === "전체" ? s.active : ""}>
-            전체
-          </button>
-          <button onClick={() => setCategory("개인 프로젝트")} className={category === "개인 프로젝트" ? s.active : ""}>
-            개인 프로젝트
-          </button>
-          <button onClick={() => setCategory("팀 프로젝트")} className={category === "팀 프로젝트" ? s.active : ""}>
-            팀 프로젝트
-          </button>
-          <button onClick={() => setCategory("퍼블리싱")} className={category === "퍼블리싱" ? s.active : ""}>
-            퍼블리싱
-          </button>
-        </nav>
+        <div className={s.projectHeader}>
+          <h2 className={s.title}>It&apos;s my works! 💻</h2>
+          <nav className={s.category}>
+            <button onClick={() => setCategory("All")} className={category === "All" ? s.active : ""}>
+              All
+            </button>
+            <button onClick={() => setCategory("Personal")} className={category === "Personal" ? s.active : ""}>
+              Personal
+            </button>
+            <button onClick={() => setCategory("Team")} className={category === "Team" ? s.active : ""}>
+              Team
+            </button>
+            <button onClick={() => setCategory("Company")} className={category === "Company" ? s.active : ""}>
+              Company
+            </button>
+          </nav>
+        </div>
 
         <ul className={s.projectList}>
           {filteredProjects.map((project) => (
@@ -60,6 +61,7 @@ const Project = () => {
               <div className={s.imgWrap}>
                 <Image src={project.image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={project.title} priority />
               </div>
+              <span className={s.tag}>{project.category}</span>
               <div className={s.titleWrap}>
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
