@@ -1,15 +1,39 @@
-.tags {
-  font-size: 1.125rem;
-  display: flex;
-  gap: 0.5rem;
+.tagWrap {
+  &.small {
+    padding-left: 0;
+  }
 
-  .tagName {
-    color: #c15764;
+  &.medium {
+    padding-left: 1rem;
   }
-  .attr {
-    color: #cf905a;
+
+  &.large {
+    padding-left: 2rem;
   }
-  .attrValue {
-    color: #82b669;
+
+  .tag {
+    font-size: 1.125rem;
+    display: flex;
+    gap: 0.5rem;
+    @include tablet {
+      font-size: 1rem;
+      @include mobile {
+        font-size: 0.875rem;
+      }
+    }
+
+    .tagName {
+      color: #c15764;
+    }
+    .attr {
+      color: #cf905a;
+    }
+    .attrValue {
+      color: #82b669;
+    }
+  }
+
+  .children {
+    padding-left: 1rem;
   }
 }
