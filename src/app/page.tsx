@@ -11,7 +11,7 @@ const Home = () => {
       <div className={s.homeTitleWrap}>
         <h1 className={s.homeTitle}>
           <Typewriter
-            words={["Hello👋 Hyemin’s Portfolio!", "Welcome to Hyemin’s Portfolio!"]}
+            words={["Hello👋 Hyemin’s Portfolio!", "I'm Frontend Developer"]}
             loop={5}
             cursor
             cursorStyle="|"
@@ -22,10 +22,10 @@ const Home = () => {
         </h1>
         <div className={s.buttonWrap}>
           <Button type="fill">
-            <Link href="/about">About me</Link>
+            <Link href="/project">View Works</Link>
           </Button>
           <Button type="empty">
-            <Link href="/contact">Contact me</Link>
+            <Link href="/about">About me</Link>
           </Button>
         </div>
       </div>

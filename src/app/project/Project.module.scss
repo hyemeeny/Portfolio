@@ -1,25 +1,33 @@
 .projectPage {
-  .category {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
+  .projectHeader {
+    @include flex-between;
     margin-bottom: 1rem;
 
-    button {
-      font-size: 0.875rem;
-      border: 1px solid $fontColor;
-      border-radius: 100px;
-      padding: 0.3rem 1rem;
-      transition: all 0.3s ease;
+    .title {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
 
-      &:hover {
-        border: 1px solid $pointColor;
-        background-color: $pointColor;
-      }
+    .category {
+      display: flex;
+      gap: 1rem;
 
-      &.active {
-        border: 1px solid $pointColor;
-        background-color: $pointColor;
+      button {
+        font-size: 0.875rem;
+        border: 1px solid $fontColor;
+        border-radius: 100px;
+        padding: 0.3rem 1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          border: 1px solid $pointColor;
+          background-color: $pointColor;
+        }
+
+        &.active {
+          border: 1px solid $pointColor;
+          background-color: $pointColor;
+        }
       }
     }
   }
@@ -39,6 +47,7 @@
       border-radius: 8px;
       overflow: hidden;
       cursor: pointer;
+      position: relative;
 
       .imgWrap {
         position: relative;
@@ -49,6 +58,20 @@
         img {
           object-fit: cover;
         }
+      }
+
+      .tag {
+        font-size: 0.875rem;
+        background-color: $pointColor;
+        width: 140px;
+        height: auto;
+        display: block;
+        text-align: center;
+        padding: 0.25rem 0;
+        position: absolute;
+        top: 20px;
+        left: -30px;
+        transform: rotate(320deg);
       }
 
       .titleWrap {

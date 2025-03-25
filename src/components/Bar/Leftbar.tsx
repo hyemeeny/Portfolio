@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import s from "./Leftbar.module.scss";
 import { IoDocumentsOutline, IoSearch, IoGitBranchOutline } from "react-icons/io5";
-import { MdOutlineWidgets } from "react-icons/md";
+import { LuBlocks } from "react-icons/lu";
 
 const Leftbar = () => {
   const pathname = usePathname();
@@ -29,7 +29,7 @@ const Leftbar = () => {
         </li>
         <li className={pathname.startsWith("/contact") ? s.active : ""}>
           <Link href="/contact">
-            <MdOutlineWidgets />
+            <LuBlocks />
           </Link>
         </li>
       </ul>
