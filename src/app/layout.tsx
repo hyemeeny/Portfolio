@@ -19,8 +19,8 @@ const NotoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "PORTFOLIO",
-  description: "프론트엔드 지혜민의 포트폴리오입니다.",
+  title: "지혜민의 Portfolio",
+  description: "프론트엔드 개발자 지혜민의 포트폴리오입니다.",
 };
 
 export default function RootLayout({

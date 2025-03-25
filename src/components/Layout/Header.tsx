@@ -35,7 +35,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <p className={s.name}>Hyemin Ji - Visual Studio Code</p>
+      <p className={s.name}>Ji Hyemin - Visual Studio Code</p>
       <div className={s.dotWrap}>
         <span className={clsx(s.dot, s.red)}></span>
         <span className={clsx(s.dot, s.yellow)}></span>
