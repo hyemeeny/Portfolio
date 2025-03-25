@@ -1,0 +1,15 @@
+.tags {
+  font-size: 1.125rem;
+  display: flex;
+  gap: 0.5rem;
+
+  .tagName {
+    color: #c15764;
+  }
+  .attr {
+    color: #cf905a;
+  }
+  .attrValue {
+    color: #82b669;
+  }
+}
