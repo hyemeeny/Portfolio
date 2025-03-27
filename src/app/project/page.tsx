@@ -74,7 +74,6 @@ const Project = () => {
       <Modal>
         {modalType === "spaceLink" && <SpaceLinkModal />}
         {modalType === "travelmaker" && <TravelmakerModal />}
-        {/* {modalType === "taskify" && <TaskifyModal />} */}
       </Modal>
     </section>
   );
