@@ -1,0 +1,43 @@
+.contactPage {
+  .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: flex;
+    gap: 0.5rem;
+
+    span {
+      color: $pointColor;
+    }
+  }
+
+  .contactLine {
+    display: flex;
+    gap: 2rem;
+
+    .number {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: gray;
+    }
+  }
+
+  .contactWrap {
+    display: grid;
+    gap: 1.6rem;
+    padding-left: 2rem;
+
+    .info {
+      padding-left: 2rem;
+    }
+  }
+}
