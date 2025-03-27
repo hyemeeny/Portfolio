@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Noto_Sans_KR } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import clsx from "clsx";
 import "@/styles/globals.scss";
 import s from "./Home.module.scss";
@@ -11,11 +11,6 @@ import Leftbar from "@/components/Bar/Leftbar";
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-});
-
-const NotoSansKR = Noto_Sans_KR({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -30,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(NotoSansKR.className, JetBrainsMono.className)}>
+      <body className={clsx(JetBrainsMono.className)}>
         <Header />
         <div className={s.tabWrap}>
           <Leftbar />
