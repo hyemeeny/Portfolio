@@ -3,15 +3,26 @@
 
   .mainWrap {
     flex: 1;
+    @include mobile {
+      overflow: hidden;
+    }
   }
 }
 
 .mainPage {
   width: 100%;
-  height: calc(100% - 39px);
+  height: calc(100vh - 39px);
   background: url("../../public/images/vscode.svg") center 20% no-repeat;
   background-size: 30%;
   position: relative;
+  @include tablet {
+    height: calc(100vh - 74px);
+    background-position: center 30%;
+    background-size: 50%;
+    @include mobile {
+      height: calc(100vh - 84px);
+    }
+  }
 
   .homeTitleWrap {
     position: absolute;
@@ -26,6 +37,12 @@
     .homeTitle {
       font-size: 3rem;
       font-weight: 600;
+      @include tablet {
+        font-size: 2.5rem;
+        @include mobile {
+          font-size: 1.25rem;
+        }
+      }
     }
 
     .buttonWrap {

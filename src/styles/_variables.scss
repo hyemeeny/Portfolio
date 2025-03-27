@@ -17,6 +17,28 @@ $pointColor: #fa826c;
   }
 }
 
+@mixin fontSize {
+  font-size: 1rem;
+  @include tablet {
+    font-size: 0.875rem;
+  }
+}
+
+@mixin dot {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc((27.2px - 3px) / 2);
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 100px;
+  @include tablet {
+    top: calc((23.79px - 3px) / 2);
+  }
+}
+
 /* ----------------------- start: flex custom --------------------- */
 @mixin flex-center {
   display: flex;

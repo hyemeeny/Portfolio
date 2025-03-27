@@ -19,6 +19,9 @@
       align-items: center;
       font-size: 0.875rem;
       gap: 1rem;
+      @include tablet {
+        display: none;
+      }
     }
   }
 

@@ -4,6 +4,9 @@
   border-left: 1px solid $borderColor;
   border-right: 1px solid $borderColor;
   min-width: 200px;
+  @include tablet {
+    display: none;
+  }
 
   .explorer {
     font-size: 1rem;

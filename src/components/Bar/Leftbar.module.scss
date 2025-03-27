@@ -24,6 +24,9 @@
       a {
         font-size: 2rem;
         @include flex-center;
+        @include mobile {
+          font-size: 1.5rem;
+        }
       }
     }
   }

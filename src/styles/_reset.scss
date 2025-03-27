@@ -23,7 +23,6 @@ cite,
 code,
 del,
 dfn,
-em,
 img,
 ins,
 kbd,
@@ -89,6 +88,7 @@ button {
   text-decoration: none;
   background: transparent;
   color: inherit;
+  word-spacing: -3px;
 }
 /* HTML5 display-role reset for older browsers */
 article,
