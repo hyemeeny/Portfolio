@@ -13,6 +13,9 @@
     font-weight: 500;
     display: flex;
     gap: 0.5rem;
+    @include mobile {
+      font-size: 0.875rem;
+    }
 
     span {
       color: $pointColor;
@@ -22,6 +25,9 @@
   .contactLine {
     display: flex;
     gap: 2rem;
+    @include mobile {
+      gap: 1rem;
+    }
 
     .number {
       display: flex;
@@ -33,11 +39,18 @@
 
   .contactWrap {
     display: grid;
-    gap: 1.6rem;
+    gap: 1.5rem;
     padding-left: 2rem;
+    @include mobile {
+      padding-left: 1rem;
+      gap: 1.15rem;
+    }
 
     .info {
       padding-left: 2rem;
+      @include mobile {
+        padding-left: 1rem;
+      }
     }
   }
 }

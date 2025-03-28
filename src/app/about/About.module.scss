@@ -39,7 +39,9 @@
       margin-bottom: 0.5rem;
       @include flex-between;
       @include mobile {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 0.2rem;
       }
     }
 

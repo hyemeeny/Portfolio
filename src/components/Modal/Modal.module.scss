@@ -116,6 +116,9 @@
           transition: all 0.2s ease;
           @include tablet {
             font-size: 1rem;
+            @include mobile {
+              font-size: 0.875rem;
+            }
           }
 
           &:hover {
@@ -173,6 +176,9 @@
                 padding-left: 1rem;
                 line-height: 1.7;
                 @include fontSize;
+                @include mobile {
+                  padding-left: 0.8rem;
+                }
 
                 &::after {
                   @include dot;
