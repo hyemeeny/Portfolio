@@ -14,16 +14,9 @@ const Home = () => {
         <VscVscode className={s.vsCodeImg} />
         <div className={s.homeTitleWrap}>
           <h1 className={s.homeTitle}>
-            <Typewriter
-              words={["Hello, Hyemin’s Portfolio!", "I'm Frontend Developer"]}
-              loop={5}
-              cursor
-              cursorStyle="|"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
+            <Typewriter words={["Hello👋 Hyemin's world!"]} loop={5} cursor cursorStyle="|" typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
           </h1>
+          <p className={s.homeSubTitle}>I&apos;m Frontend Developer</p>
           <div className={s.buttonWrap}>
             <Button type="fill">
               <Link href="/project">View Works</Link>
