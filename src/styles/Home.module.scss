@@ -1,5 +1,6 @@
 .tabWrap {
   display: flex;
+  height: calc(100vh - 35px - 28px);
 
   .mainWrap {
     flex: 1;
