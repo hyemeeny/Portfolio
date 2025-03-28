@@ -6,6 +6,7 @@ import Navbar from "@/components/Bar/Navbar";
 import Sidebar from "@/components/Bar/Sidebar";
 import Header from "@/components/Layout/Header";
 import Leftbar from "@/components/Bar/Leftbar";
+import Footer from "@/components/Layout/Footer";
 
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -15,6 +16,20 @@ const JetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "지혜민의 Portfolio",
   description: "프론트엔드 개발자 지혜민의 포트폴리오입니다.",
+  openGraph: {
+    title: "지혜민의 Portfolio",
+    description: "프론트엔드 개발자 지혜민의 포트폴리오입니다.",
+    images: [
+      {
+        url: "https://portfolio-jihyemin.vercel.app/opengraph-image.jpg",
+        alt: "Jihyemin Portfolio Open Graph Image",
+      },
+    ],
+    url: "https://portfolio-jihyemin.vercel.app",
+    siteName: "지혜민의 Portfolio",
+    locale: "ko_KR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -34,6 +49,7 @@ export default function RootLayout({
             {children}
           </div>
         </div>
+        <Footer />
       </body>
     </html>
   );
