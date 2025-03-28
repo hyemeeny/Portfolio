@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import clsx from "clsx";
 import "@/styles/globals.scss";
-import s from "./Home.module.scss";
+import s from "@/styles/Home.module.scss";
 import Navbar from "@/components/Bar/Navbar";
 import Sidebar from "@/components/Bar/Sidebar";
 import Header from "@/components/Layout/Header";
@@ -25,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(JetBrainsMono.className)}>
+      <body className={JetBrainsMono.className}>
         <Header />
         <div className={s.tabWrap}>
           <Leftbar />

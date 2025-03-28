@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import s from "./Home.module.scss";
+import s from "@/styles/Home.module.scss";
 import { Typewriter } from "react-simple-typewriter";
+import { VscVscode } from "react-icons/vsc";
 import Button from "@/components/Button/Button";
 
 const Home = () => {
   return (
     <main className={s.mainPage}>
+      <VscVscode className={s.vsCodeImg} />
       <div className={s.homeTitleWrap}>
         <h1 className={s.homeTitle}>
           <Typewriter

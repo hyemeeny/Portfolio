@@ -1,0 +1,57 @@
+.tabWrap {
+  display: flex;
+
+  .mainWrap {
+    flex: 1;
+    @include mobile {
+      overflow: hidden;
+    }
+  }
+}
+
+.mainPage {
+  @include flex-center;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: calc(100vh - 75px);
+  @include mobile {
+    min-height: calc(100vh - 84px);
+    gap: 2rem;
+  }
+
+  .vsCodeImg {
+    width: 400px;
+    height: 400px;
+    color: $mainColor;
+    @include tablet {
+      width: 300px;
+      height: 300px;
+      @include mobile {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  .homeTitleWrap {
+    @include flex-center;
+    flex-direction: column;
+    gap: 1rem;
+
+    .homeTitle {
+      font-size: 3rem;
+      font-weight: 600;
+      @include tablet {
+        font-size: 2rem;
+        @include mobile {
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    .buttonWrap {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
