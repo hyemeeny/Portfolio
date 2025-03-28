@@ -10,13 +10,14 @@ $pointColor: #fa826c;
 
 .container {
   overflow-y: scroll;
-  height: calc(100vh - 73.18px);
+  height: calc(100vh - 36.9px - 37.81px - 27.76px);
   padding: 3rem 2rem;
   transition: all 1s ease;
   @include tablet {
     padding: 2rem 1rem;
     @include mobile {
-      height: calc(100vh - 83.34px);
+      height: calc(100vh - 37px - 47px - 27.59px);
+      padding: 1.5rem 0.8rem;
     }
   }
 }

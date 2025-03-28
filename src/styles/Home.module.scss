@@ -13,24 +13,14 @@
   @include flex-center;
   flex-direction: column;
   gap: 3rem;
-  min-height: calc(100vh - 75px);
   @include mobile {
-    min-height: calc(100vh - 84px);
     gap: 2rem;
   }
 
   .vsCodeImg {
-    width: 400px;
-    height: 400px;
+    width: 50vw;
+    height: 50vh;
     color: $mainColor;
-    @include tablet {
-      width: 300px;
-      height: 300px;
-      @include mobile {
-        width: 200px;
-        height: 200px;
-      }
-    }
   }
 
   .homeTitleWrap {
