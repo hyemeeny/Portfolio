@@ -22,7 +22,7 @@ const TravelmakerModal = () => {
           </Link>
         </h2>
         <Link href={"https://travelmaker-ten.vercel.app"} target="_blank" className={s.link}>
-          https://travelmaker-ten.vercel.app/
+          https://travelmaker-ten.vercel.app
         </Link>
       </div>
 

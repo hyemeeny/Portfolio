@@ -54,13 +54,13 @@ const Contact = () => {
                   <p>
                     GitHub :
                     <Link href={"https://github.com/hyemeeny"} target="_blank" rel="noopener noreferrer">
-                      <span>https://github.com/hyemeeny</span>
+                      <span>hyemeeny</span>
                     </Link>
                   </p>
                   <p>
                     Blog :
                     <Link href={"https://velog.io/@hyemeeny"} target="_blank" rel="noopener noreferrer">
-                      <span>https://velog.io/@hyemeeny</span>
+                      <span>hyemeeny.log</span>
                     </Link>
                   </p>
                 </div>

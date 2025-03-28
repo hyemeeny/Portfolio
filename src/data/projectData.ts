@@ -15,12 +15,6 @@ export const projectData: ProjectProps[] = [
     image: "/images/travelmaker/travelmaker.jpg",
     category: "🧑‍🤝‍🧑 Team",
   },
-  // {
-  //   id: 3,
-  //   title: "Taskify",
-  //   description: "팀원들 간 소통을 원활히 하며 업무 효율성을 증대시킬 수 있는 협업 툴 및 일정 관리 시스템",
-  //   image: "/images/taskify/taskify.jpg",
-  // },
   {
     id: 3,
     title: "NEUL STUDIO",
