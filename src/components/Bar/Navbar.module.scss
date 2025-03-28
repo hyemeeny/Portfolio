@@ -8,6 +8,7 @@
 
   ul {
     display: flex;
+    height: 35px;
 
     li {
       border-right: 1px solid $borderColor;
@@ -24,7 +25,7 @@
 
       a {
         font-size: 0.875rem;
-        padding: 8px 16px;
+        padding: 0.5rem 1rem;
         display: flex;
         align-items: center;
         gap: 8px;

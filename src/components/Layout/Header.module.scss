@@ -1,6 +1,7 @@
 .header {
   @include flex-between;
-  padding: 8px;
+  height: 35px;
+  padding: 0.5rem;
   background-color: $mainColor;
   border-bottom: 1px solid $borderColor;
 
