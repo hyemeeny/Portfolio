@@ -1,19 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import s from "./Project.module.scss";
 import { projectData } from "@/data/projectData";
 import { ProjectProps } from "@/types/project";
+import { useProjectStore } from "@/store/projectStore";
 import { useModalStore } from "@/store/modalStore";
 import Container from "@/components/Layout/Container";
+import ProjectHeader from "@/components/Project/ProjectHeader";
+import ProjectList from "@/components/Project/ProjectList";
 import Modal from "@/components/Modal/Modal";
 import SpaceLinkModal from "@/components/Modal/SpaceLinkModal";
 import TravelmakerModal from "@/components/Modal/TravelmakerModal";
 
 const Project = () => {
   const [modalType, setModalType] = useState<string>("");
-  const [category, setCategory] = useState<string>("All");
+  const { category } = useProjectStore();
   const { openModal } = useModalStore();
 
   const handleProjectClick = (project: ProjectProps) => {
@@ -35,40 +36,10 @@ const Project = () => {
   });
 
   return (
-    <section className={s.projectPage}>
+    <section>
       <Container>
-        <div className={s.projectHeader}>
-          <h2 className={s.title}>It&apos;s my works! 💻</h2>
-          <nav className={s.category}>
-            <button onClick={() => setCategory("All")} className={category === "All" ? s.active : ""}>
-              All
-            </button>
-            <button onClick={() => setCategory("Personal")} className={category === "Personal" ? s.active : ""}>
-              Personal
-            </button>
-            <button onClick={() => setCategory("Team")} className={category === "Team" ? s.active : ""}>
-              Team
-            </button>
-            <button onClick={() => setCategory("Company")} className={category === "Company" ? s.active : ""}>
-              Company
-            </button>
-          </nav>
-        </div>
-
-        <ul className={s.projectList}>
-          {filteredProjects.map((project) => (
-            <li key={project.id} className={s.projectItem} onClick={() => handleProjectClick(project)}>
-              <div className={s.imgWrap}>
-                <Image src={project.image} fill sizes="(max-width: 768px) 100vw, 50vw" alt={project.title} priority />
-              </div>
-              <span className={s.tag}>{project.category}</span>
-              <div className={s.titleWrap}>
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <ProjectHeader />
+        <ProjectList filteredProjects={filteredProjects} handleProjectClick={handleProjectClick} />
       </Container>
 
       <Modal>

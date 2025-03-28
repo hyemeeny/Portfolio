@@ -1,0 +1,48 @@
+.projectHeader {
+  @include flex-between;
+  margin-bottom: 1rem;
+  @include mobile {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    @include tablet {
+      gap: 0.5rem;
+    }
+
+    button {
+      font-size: 0.875rem;
+      border: 1px solid $fontColor;
+      border-radius: 100px;
+      padding: 0.3rem 1rem;
+      transition: all 0.3s ease;
+      @include tablet {
+        font-size: 0.8125rem;
+        padding: 0.2rem 0.75rem;
+      }
+
+      &:hover {
+        border: 1px solid $pointColor;
+        background-color: $pointColor;
+      }
+
+      &.active {
+        border: 1px solid $pointColor;
+        background-color: $pointColor;
+      }
+    }
+  }
+}
