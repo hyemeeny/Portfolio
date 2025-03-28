@@ -3,7 +3,7 @@ import Image from "next/image";
 import s from "./Modal.module.scss";
 import { travelmakerTechStack } from "@/data/techStackData";
 import { travelmakerPageData } from "@/data/pageData";
-import { IoLogoGithub } from "react-icons/io";
+import { VscGithubInverted } from "react-icons/vsc";
 
 interface PageProps {
   title: string;
@@ -18,7 +18,7 @@ const TravelmakerModal = () => {
         <h2 className={s.subTitle}>
           🔗 배포 주소
           <Link href={"https://github.com/hyemeeny/travelmaker"} target="_blank" className={s.github}>
-            <IoLogoGithub />
+            <VscGithubInverted />
           </Link>
         </h2>
         <Link href={"https://travelmaker-ten.vercel.app"} target="_blank" className={s.link}>
@@ -46,7 +46,7 @@ const TravelmakerModal = () => {
                   <li key={desc}>{desc}</li>
                 ))}
               </ul>
-              {page.image && <Image src={page.image} width={800} height={100} alt={`${page.title} image`} />}
+              {page.image && <Image src={page.image} width={800} height={100} alt={page.title} />}
             </div>
           ))}
         </div>

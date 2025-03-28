@@ -3,7 +3,7 @@ import Image from "next/image";
 import s from "./Modal.module.scss";
 import { spaceLinkTechStack } from "@/data/techStackData";
 import { spaceLinkPageData } from "@/data/pageData";
-import { IoLogoGithub } from "react-icons/io";
+import { VscGithubInverted } from "react-icons/vsc";
 
 interface PageProps {
   title: string;
@@ -18,7 +18,7 @@ const SpaceLinkModal = () => {
         <h2 className={s.subTitle}>
           🔗 배포 주소
           <Link href={"https://github.com/hyemeeny/SpaceLink"} target="_blank" className={s.github}>
-            <IoLogoGithub />
+            <VscGithubInverted />
           </Link>
         </h2>
         <Link href={"https://spacelink-hyemin.vercel.app"} target="_blank" className={s.link}>
@@ -46,7 +46,7 @@ const SpaceLinkModal = () => {
                   <li key={desc}>{desc}</li>
                 ))}
               </ul>
-              {page.image && <Image src={page.image} width={800} height={100} alt={`${page.title} image`} />}
+              {page.image && <Image src={page.image} width={800} height={100} alt={page.title} />}
             </div>
           ))}
         </div>
