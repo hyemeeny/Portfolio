@@ -3,8 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import s from "./Leftbar.module.scss";
-import { IoDocumentsOutline, IoSearch, IoGitBranchOutline } from "react-icons/io5";
-import { LuBlocks } from "react-icons/lu";
+import { VscFiles, VscSearch, VscSourceControl, VscExtensions, VscAccount, VscGear } from "react-icons/vsc";
 
 const Leftbar = () => {
   const pathname = usePathname();
@@ -14,22 +13,34 @@ const Leftbar = () => {
       <ul>
         <li className={pathname === "/" ? s.active : ""}>
           <Link href="/">
-            <IoDocumentsOutline />
+            <VscFiles />
           </Link>
         </li>
         <li className={pathname.startsWith("/about") ? s.active : ""}>
           <Link href="/about">
-            <IoSearch />
+            <VscSearch />
           </Link>
         </li>
         <li className={pathname.startsWith("/project") ? s.active : ""}>
           <Link href="/project">
-            <IoGitBranchOutline />
+            <VscSourceControl />
           </Link>
         </li>
         <li className={pathname.startsWith("/contact") ? s.active : ""}>
           <Link href="/contact">
-            <LuBlocks />
+            <VscExtensions />
+          </Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <Link href="/">
+            <VscAccount />
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <VscGear />
           </Link>
         </li>
       </ul>

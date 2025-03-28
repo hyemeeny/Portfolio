@@ -1,13 +1,13 @@
 .navbar {
   width: 100%;
+  background-color: $mainColor;
+  border-bottom: 1px solid $borderColor;
   @include mobile {
     overflow-x: scroll;
   }
 
   ul {
     display: flex;
-    background-color: $mainColor;
-    border-bottom: 1px solid $borderColor;
 
     li {
       border-right: 1px solid $borderColor;

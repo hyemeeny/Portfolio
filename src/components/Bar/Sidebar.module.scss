@@ -1,11 +1,13 @@
 .sidebar {
-  min-height: calc(100vh - 38px);
+  min-width: 200px;
   background-color: $mainColor;
   border-left: 1px solid $borderColor;
   border-right: 1px solid $borderColor;
-  min-width: 200px;
   @include tablet {
-    display: none;
+    min-width: 150px;
+    @include mobile {
+      display: none;
+    }
   }
 
   .explorer {

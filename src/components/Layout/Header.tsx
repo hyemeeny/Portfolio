@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 const Header = () => {
   return (
-    <section className={s.header}>
+    <header className={s.header}>
       <div className={s.titleWrap}>
         <VscVscode className={s.vsCodeIcon} />
         <ul className={s.title}>
@@ -41,7 +41,7 @@ const Header = () => {
         <span className={clsx(s.dot, s.yellow)}></span>
         <span className={clsx(s.dot, s.green)}></span>
       </div>
-    </section>
+    </header>
   );
 };
 

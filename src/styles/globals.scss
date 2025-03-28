@@ -9,6 +9,7 @@ body {
   background-color: $background;
   color: $fontColor;
   word-break: keep-all;
+  overflow: hidden;
   @include mobile {
     min-width: 375px;
   }

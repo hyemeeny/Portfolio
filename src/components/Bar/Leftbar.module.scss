@@ -1,10 +1,16 @@
 .leftbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: $mainColor;
 
   ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    @include mobile {
+      gap: 0.5rem;
+    }
 
     li {
       padding: 0.7rem 0.5rem;

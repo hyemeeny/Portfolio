@@ -27,6 +27,9 @@
 
   .name {
     font-size: 0.875rem;
+    @include mobile {
+      font-size: 0.8125rem;
+    }
   }
 
   .dotWrap {
