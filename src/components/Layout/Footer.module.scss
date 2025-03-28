@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  background-color: $mainColor;
+  border-top: 1px solid $borderColor;
+
+  .footerWrap {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    .footerIcon {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.8125rem;
+      padding: 0.3rem;
+      transition: all 0.3s ease;
+
+      &.mobileHidden {
+        @include mobile {
+          display: none;
+        }
+      }
+
+      &:hover {
+        background-color: $subColor;
+      }
+    }
+  }
+}
