@@ -14,10 +14,10 @@ const JetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "지혜민의 Portfolio",
+  title: "Ji Hyemin | Portfolio",
   description: "프론트엔드 개발자 지혜민의 포트폴리오입니다.",
   openGraph: {
-    title: "지혜민의 Portfolio",
+    title: "Ji Hyemin | Portfolio",
     description: "프론트엔드 개발자 지혜민의 포트폴리오입니다.",
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       },
     ],
     url: "https://portfolio-jihyemin.vercel.app",
-    siteName: "지혜민의 Portfolio",
+    siteName: "Ji Hyemin | Portfolio",
     locale: "ko_KR",
     type: "website",
   },
