@@ -24,7 +24,7 @@
   .tag {
     font-size: 0.875rem;
     background-color: $pointColor;
-    width: 160px;
+    width: 150px;
     height: auto;
     display: block;
     text-align: center;
@@ -33,6 +33,11 @@
     top: 25px;
     left: -30px;
     transform: rotate(320deg);
+    @include mobile {
+      width: 200px;
+      top: 20px;
+      left: -60px;
+    }
   }
 
   .titleWrap {
