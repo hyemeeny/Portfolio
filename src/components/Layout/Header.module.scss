@@ -13,6 +13,9 @@
     .vsCodeIcon {
       font-size: 1.25rem;
       color: #37a8f2;
+      @include mobile {
+        font-size: 1.125rem;
+      }
     }
 
     .title {
@@ -41,6 +44,10 @@
       width: 12px;
       height: 12px;
       border-radius: 100px;
+      @include mobile {
+        width: 8px;
+        height: 8px;
+      }
 
       &.red {
         background-color: #ec6a5e;
