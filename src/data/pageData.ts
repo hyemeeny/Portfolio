@@ -14,7 +14,7 @@ export const spaceLinkPageData = [
       "로그아웃 시 쿠키에 저장된 토큰도 함께 삭제되도록 구현하여, 인증 정보를 바로 제거하고 자동 로그인을 방지했습니다.",
       "Zod와 React-Hook-Form으로 유효성 검사를 추가해 사용자 입력의 정확성과 안정성을 강화했습니다.",
     ],
-    image: "/images/spaceLink/login.gif",
+    image: "/images/spaceLink/signup-login.gif",
   },
   {
     title: "링크 및 폴더 기능",
