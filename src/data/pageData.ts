@@ -24,7 +24,7 @@ export const spaceLinkPageData = [
       "POST와 PATCH를 Server Action으로 RESTful API를 연동하여 백엔드와의 원활한 데이터 통신을 구현했습니다.",
       "코드 중복을 최소화하고 재사용성을 높이기 위해 공용 모달을 제작하여 웹페이지의 효율성과 사용자 경험을 향상시켰습니다.",
     ],
-    image: "/images/spaceLink/link.gif",
+    image: "/images/spaceLink/link-folder.gif",
   },
   {
     title: "검색 기능",
