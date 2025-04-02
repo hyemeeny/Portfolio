@@ -7,7 +7,6 @@ export const spaceLinkTechStack = [
   { id: 6, name: "Zod" },
   { id: 7, name: "React-Hook-Form" },
   { id: 8, name: "React-fullpage" },
-  { id: 9, name: "React-modal" },
 ];
 
 export const travelmakerTechStack = [
