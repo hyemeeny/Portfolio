@@ -19,21 +19,27 @@ export const spaceLinkPageData = [
   {
     title: "링크 및 폴더 기능",
     description: [
-      "번들 크기 최적화, 초기 로딩 속도 향상, 및 보안 강화를 위해 링크 및 폴더 데이터 패칭을 서버 컴포넌트로 구현하였습니다.",
-      "데이터의 최신 상태를 유지하기 위해 Server Action의 revalidateTag를 활용하여 링크와 폴더 단위로 캐시를 갱신하도록 구현했습니다.",
-      "POST와 PATCH를 Server Action으로 RESTful API를 연동하여 백엔드와의 원활한 데이터 통신을 구현했습니다.",
-      "코드 중복을 최소화하고 재사용성을 높이기 위해 공용 모달을 제작하여 웹페이지의 효율성과 사용자 경험을 향상시켰습니다.",
+      "초기 로딩 속도 개선과 보안 강화를 위해 링크 및 폴더 데이터를 서버 컴포넌트에서 패칭하고, 인증 정보를 쿠키 기반으로 검증하도록 구현했습니다.",
+      "링크 및 폴더 데이터를 Promise.all로 병렬 처리하여 데이터 요청 간 대기 시간을 줄이고, 페이지 렌더링 성능을 향상시켰습니다.",
+      "Server Action의 revalidateTag를 활용해 링크와 폴더 단위로 캐시를 효율적으로 갱신하며 데이터의 최신 상태를 유지했습니다.",
+      "Zustand로 전역 모달 상태를 관리하고, 공용 모달, 입력 필드, 버튼 등의 UI 컴포넌트를 공통화하여 코드 재사용성과 유지 보수성을 높이며 일관된 사용자 경험을 향상시켰습니다.",
     ],
     image: "/images/spaceLink/link-folder.gif",
   },
   {
     title: "검색 기능",
-    description: ["서버 컴포넌트에서 params를 이용해 검색 기능을 구현했습니다."],
+    description: [
+      "검색 속도와 UX를 개선하기 위해 서버 컴포넌트에서는 searchParams를 통해 URL 쿼리를 읽고, 클라이언트에서는 URLSearchParams와 useRouter로 검색 조건을 URL에 반영하여 상태를 동기화하는 기능을 구현했습니다.",
+      "검색 조건이 URL에 반영되어 새로고침, 히스토리 이동, 공유 시에도 동일한 결과를 확인할 수 있도록 검색 상태의 일관성을 유지했습니다.",
+    ],
     image: "/images/spaceLink/search.gif",
   },
   {
     title: "즐겨찾기 페이지",
-    description: ["POST와 PATCH를 Server Action으로 RESTful API를 연동하여 백엔드와의 원활한 데이터 통신을 구현했습니다."],
+    description: [
+      "보안성과 데이터 접근 제어 강화를 위해, 서버 컴포넌트에서 쿠키 기반 토큰 검증을 통해 인증된 사용자만 즐겨찾기 데이터를 조회할 수 있도록 구현했습니다.",
+      "초기 렌더링 속도 향상을 위해 사용자 정보와 즐겨찾기 데이터를 서버 컴포넌트에서 병렬로 요청했습니다.",
+    ],
     image: "/images/spaceLink/favorite.gif",
   },
 ];
