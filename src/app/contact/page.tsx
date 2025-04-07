@@ -23,12 +23,12 @@ const Contact = () => {
           </div>
           <div className={s.text}>
             <p>
-              <span>.Contact</span> &#123;
+              <span>.Connect</span> &#123;
             </p>
             <div className={s.contactWrap}>
               <div className={s.contactbox}>
                 <p>
-                  <span>.Channel</span> &#123;
+                  <span>.Contact</span> &#123;
                 </p>
                 <div className={s.info}>
                   <p>
@@ -48,7 +48,7 @@ const Contact = () => {
               </div>
               <div className={s.contactbox}>
                 <p>
-                  <span>.Social</span> &#123;
+                  <span>.Profiles</span> &#123;
                 </p>
                 <div className={s.info}>
                   <p>
