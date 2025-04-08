@@ -48,7 +48,7 @@ const Contact = () => {
               </div>
               <div className={s.contactbox}>
                 <p>
-                  <span>.Profiles</span> &#123;
+                  <span>.Channel</span> &#123;
                 </p>
                 <div className={s.info}>
                   <p>
