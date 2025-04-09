@@ -2,8 +2,8 @@
   @include flex-between;
   height: 35px;
   padding: 0.5rem;
-  background-color: $mainColor;
-  border-bottom: 1px solid $borderColor;
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
 
   .titleWrap {
     display: flex;

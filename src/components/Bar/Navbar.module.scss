@@ -1,8 +1,8 @@
 .navbar {
   width: 100%;
-  background-color: $mainColor;
-  border-bottom: 1px solid $borderColor;
-  @include mobile {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+  @include tablet {
     overflow-x: scroll;
   }
 
@@ -11,15 +11,15 @@
     height: 36.67px;
 
     li {
-      border-right: 1px solid $borderColor;
+      border-right: 1px solid var(--borderColor);
 
       &:first-child {
         border-left: none;
       }
 
       &.active {
-        border-top: 1px solid $pointColor;
-        background-color: $subColor;
+        border-top: 1px solid var(--pointColor);
+        background-color: var(--subColor);
         border-bottom: none;
       }
 
@@ -48,6 +48,10 @@
 
         .scssIcon {
           color: #ce6b9c;
+        }
+
+        .jsonIcon {
+          color: #fbc02d;
         }
       }
     }

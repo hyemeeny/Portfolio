@@ -35,13 +35,13 @@
       }
 
       &:hover {
-        border: 1px solid $pointColor;
-        background-color: $pointColor;
+        border: 1px solid var(--pointColor);
+        background-color: var(--pointColor);
       }
 
       &.active {
-        border: 1px solid $pointColor;
-        background-color: $pointColor;
+        border: 1px solid var(--pointColor);
+        background-color: var(--pointColor);
       }
     }
   }

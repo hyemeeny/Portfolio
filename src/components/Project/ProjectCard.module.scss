@@ -10,10 +10,7 @@
     height: 250px;
     overflow: hidden;
     @include tablet {
-      height: 200px;
-      @include mobile {
-        height: 160px;
-      }
+      height: 160px;
     }
 
     img {
@@ -23,7 +20,7 @@
 
   .tag {
     font-size: 0.875rem;
-    background-color: $pointColor;
+    background-color: var(--pointColor);
     width: 150px;
     height: auto;
     display: block;
@@ -42,9 +39,9 @@
 
   .titleWrap {
     min-height: 130px;
-    background-color: $mainColor;
+    background-color: var(--mainColor);
     padding: 1.5rem 1rem;
-    @include mobile {
+    @include tablet {
       padding: 1.125rem 1rem;
     }
 
@@ -52,6 +49,10 @@
       font-size: 1.125rem;
       font-weight: 600;
       margin-bottom: 1rem;
+      @include tablet {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
     }
 
     p {

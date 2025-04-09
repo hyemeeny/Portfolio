@@ -10,10 +10,10 @@
   }
 
   &.fill {
-    background-color: $pointColor;
+    background-color: var(--pointColor);
   }
 
   &.empty {
-    border: 1px solid $pointColor;
+    border: 1px solid var(--pointColor);
   }
 }

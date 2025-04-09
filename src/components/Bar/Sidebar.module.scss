@@ -1,8 +1,8 @@
 .sidebar {
   min-width: 200px;
-  background-color: $mainColor;
-  border-left: 1px solid $borderColor;
-  border-right: 1px solid $borderColor;
+  background-color: var(--mainColor);
+  border-left: 1px solid var(--borderColor);
+  border-right: 1px solid var(--borderColor);
   @include tablet {
     min-width: 150px;
     @include mobile {
@@ -30,11 +30,11 @@
   ul {
     display: flex;
     flex-direction: column;
-    background-color: $mainColor;
+    background-color: var(--mainColor);
 
     li {
       &.active {
-        background-color: $subColor;
+        background-color: var(--subColor);
       }
 
       a {
@@ -62,6 +62,10 @@
 
         .scssIcon {
           color: #ce6b9c;
+        }
+
+        .jsonIcon {
+          color: #fbc02d;
         }
       }
     }
