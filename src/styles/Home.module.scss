@@ -4,7 +4,7 @@
 
   .mainWrap {
     flex: 1;
-    @include mobile {
+    @include tablet {
       overflow: hidden;
     }
   }
@@ -17,7 +17,7 @@
   .vsCodeImg {
     width: 50vw;
     height: 50vh;
-    color: $mainColor;
+    color: var(--mainColor);
   }
 
   .homeTitleWrap {
