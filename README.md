@@ -1,6 +1,6 @@
 ## ✨ Portfolio
 
-![portfolio](https://github.com/user-attachments/assets/05b92747-5927-417c-aae7-7dead02e50f3)
+![portfolio](https://github.com/user-attachments/assets/f4904da6-4a4b-4975-84b3-4a6cf0aaa4b3)
 
 ## ⭐ 프로젝트 소개
 
