@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "@/styles/globals.scss";
 import s from "@/styles/Home.module.scss";
+import ThemeProvider from "@/components/Theme/ThemeProvider";
 import Navbar from "@/components/Bar/Navbar";
 import Sidebar from "@/components/Bar/Sidebar";
-import Header from "@/components/Layout/Header";
 import Leftbar from "@/components/Bar/Leftbar";
+import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 
 const JetBrainsMono = JetBrains_Mono({
@@ -40,16 +41,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={JetBrainsMono.className}>
-        <Header />
-        <div className={s.tabWrap}>
-          <Leftbar />
-          <Sidebar />
-          <div className={s.mainWrap}>
-            <Navbar />
-            {children}
+        <ThemeProvider>
+          <Header />
+          <div className={s.tabWrap}>
+            <Leftbar />
+            <Sidebar />
+            <div className={s.mainWrap}>
+              <Navbar />
+              {children}
+            </div>
           </div>
-        </div>
-        <Footer />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
