@@ -1,11 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import s from "./Sidebar.module.scss";
 import { FaReact, FaHtml5, FaJs, FaSass } from "react-icons/fa";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
-import { useState } from "react";
+import { VscJson } from "react-icons/vsc";
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -41,6 +42,11 @@ const Sidebar = () => {
           <li className={pathname.startsWith("/contact") ? s.active : ""}>
             <Link href="/contact">
               <FaSass className={s.scssIcon} /> contact.scss
+            </Link>
+          </li>
+          <li className={pathname.startsWith("/setting") ? s.active : ""}>
+            <Link href="/setting">
+              <VscJson className={s.jsonIcon} /> setting.json
             </Link>
           </li>
         </ul>

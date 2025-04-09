@@ -38,8 +38,8 @@ const Leftbar = () => {
             <VscAccount />
           </Link>
         </li>
-        <li>
-          <Link href="https://velog.io/@hyemeeny" target="_blank">
+        <li className={pathname.startsWith("/setting") ? s.active : ""}>
+          <Link href="/setting">
             <VscGear />
           </Link>
         </li>
