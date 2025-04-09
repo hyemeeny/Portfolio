@@ -1,0 +1,8 @@
+.settingPage {
+  @include flex-center;
+
+  .themeButton {
+    display: flex;
+    gap: 1rem;
+  }
+}
