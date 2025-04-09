@@ -26,13 +26,13 @@
     }
 
     .tagName {
-      color: #e26776;
+      color: var(--tagName);
     }
     .attr {
-      color: #ffaa5f;
+      color: var(--attr);
     }
     .attrValue {
-      color: #8fda6d;
+      color: var(--attrValue);
     }
   }
 
