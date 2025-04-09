@@ -12,7 +12,11 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   if (!isMount) return null;
 
-  return <NextThemesProvider attribute="class">{children}</NextThemesProvider>;
+  return (
+    <NextThemesProvider attribute="class" defaultTheme="light">
+      {children}
+    </NextThemesProvider>
+  );
 };
 
 export default ThemeProvider;
