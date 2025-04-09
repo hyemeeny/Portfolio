@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <header className={s.header}>
       <div className={s.titleWrap}>
-        <VscVscode className={s.vsCodeIcon} />
+        <Link href="/">
+          <VscVscode className={s.vsCodeIcon} />
+        </Link>
         <ul className={s.title}>
           <li>
             <Link href="/">File</Link>

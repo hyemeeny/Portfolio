@@ -34,12 +34,12 @@ const Leftbar = () => {
       </ul>
       <ul>
         <li>
-          <Link href="/">
+          <Link href="https://github.com/hyemeeny" target="_blank">
             <VscAccount />
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="https://velog.io/@hyemeeny" target="_blank">
             <VscGear />
           </Link>
         </li>
