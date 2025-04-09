@@ -1,0 +1,16 @@
+.themeButton {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: var(--buttonColor);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+
+  &.active {
+    border-color: var(--pointColor);
+    box-shadow: inset 0 0 0 1px var(--pointColor);
+  }
+
+  &:hover {
+    background-color: var(--buttonHover);
+  }
+}
