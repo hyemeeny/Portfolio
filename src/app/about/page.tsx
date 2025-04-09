@@ -1,4 +1,4 @@
-import Tag from "@/components/About/Tag";
+import Tag from "@/components/Tag/Tag";
 import s from "./About.module.scss";
 import Container from "@/components/Layout/Container";
 
@@ -65,10 +65,10 @@ const About = () => {
               </li>
               <li>
                 <h3 className={s.title}>
-                  <em>Styled Components, SASS, CSS Module</em>
+                  <em>SCSS, CSS Module, TailwindCSS, Styled-Components</em>
                 </h3>
                 <div className={s.description}>
-                  <p>Styled Components, SASS, CSS Module을 활용한 다양한 스타일링 경험이 있습니다.</p>
+                  <p>SCSS, CSS Module, TailwindCSS, Styled-Components을 활용한 다양한 스타일링 경험이 있습니다.</p>
                   <p>컴포넌트 기반 스타일링을 통해 유지보수성을 높이고, 프로젝트에 적합한 스타일링 방식을 선택하여 적용합니다.</p>
                   <p>전역 스타일을 관리하고, 테마별 색상 및 크기 단위를 변수로 관리하여 유지보수성을 높입니다.</p>
                   <p>반응형 디자인 및 다크 모드와 같은 UI/UX 최적화 경험이 있습니다.</p>
