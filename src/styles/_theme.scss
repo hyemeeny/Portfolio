@@ -1,0 +1,25 @@
+:root {
+  --background: #24292f;
+  --mainColor: #1f2428;
+  --subColor: #24292f;
+  --borderColor: #24292f;
+  --buttonColor: #37414a;
+  --buttonHover: #46525e;
+  --pointColor: #fa826c;
+  --tagName: #e26776;
+  --attr: #ffaa5f;
+  --attrValue: #8fda6d;
+}
+
+.dark {
+  --background: #282a37;
+  --mainColor: #343746;
+  --subColor: #282a37;
+  --borderColor: #282a37;
+  --buttonColor: #44475a;
+  --buttonHover: #5a5e76;
+  --pointColor: #bd93f9;
+  --tagName: #f872c3;
+  --attr: #83e7fc;
+  --attrValue: #eff77b;
+}
