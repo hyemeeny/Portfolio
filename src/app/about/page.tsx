@@ -42,7 +42,7 @@ const About = () => {
                 <div className={s.description}>
                   <p>컴포넌트를 Atomic한 단위로 설계하는 것을 선호하며, 재사용성과 확장성을 고려한 개발을 지향합니다.</p>
                   <p>반복적으로 사용되는 비즈니스 로직은 커스텀 Hook으로 모듈화하여 유지보수성과 가독성을 높입니다.</p>
-                  <p>불필요한 리렌더링을 최소화하기 위해 useEffect와 useMemo를 활용하여 컴포넌트를 최적화합니다.</p>
+                  <p>불필요한 리렌더링을 최소화하기 위해 useEffect, useCallback, useMemo를 활용하여 컴포넌트를 최적화합니다.</p>
                   <p>Next.js 14 App Router 환경에서 Server Actions을 활용한 개발 경험이 있습니다.</p>
                 </div>
               </li>
@@ -98,8 +98,8 @@ const About = () => {
                 </h3>
                 <div className={s.description}>
                   <p>인터넷 면세점 사이트 유지보수 및 이벤트 페이지 구축</p>
-                  <p>사용자 경험을 높이기 위한 UI/UX 디자인 개선 및 홈페이지 마크업 유지보수</p>
-                  <p>이벤트 페이지를 기획, 디자인, 개발팀이 협력해 고객 맞춤형 UI/UX와 최적화를 구현하여 사용자 유입률 13% 증가</p>
+                  <p>JSP 기반 환경에서 페이지 구조를 개선하고 마크업 및 스타일 코드 리팩토링을 통해 화면 일관성과 사용성을 향상</p>
+                  <p>기획, 디자인, 개발팀과 협업하여 고객 맞춤형 UI/UX를 구현하고 페이지 최적화를 통해 사용자 유입률 13% 증가</p>
                 </div>
               </li>
               <li>
@@ -122,7 +122,7 @@ const About = () => {
                 <em>코드잇 스프린트 프론트엔드 9기</em> <span>2024.07 ~ 20024.12</span>
               </h3>
               <div className={s.description}>
-                <p>Javascript, React, Typescript, Next.js, git 등 프론트엔드 개발자에게 필요한 심화 기술 강의 수강</p>
+                <p>Next.js, React, Typescript, Javascript, git 등 프론트엔드 개발자에게 필요한 심화 기술 강의 수강</p>
                 <p>3개의 팀 프로젝트 진행으로 협업하는 방법과 다양한 기술을 통합적으로 활용하는 역량 익힘</p>
                 <p>스프린트 미션을 통한 GitHub 코드 리뷰 및 적극적인 피드백 반영</p>
               </div>
