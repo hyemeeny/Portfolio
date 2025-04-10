@@ -24,6 +24,17 @@ $fontColor: #dfdfdf;
   }
 }
 
+@mixin pageTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  @include tablet {
+    font-size: 1.5rem;
+    @include mobile {
+      font-size: 1.25rem;
+    }
+  }
+}
+
 @mixin dot {
   content: "";
   display: block;
