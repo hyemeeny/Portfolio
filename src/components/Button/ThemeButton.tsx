@@ -16,7 +16,12 @@ const ThemeButton = ({ themeKey, children }: ThemeButtonProps) => {
   const isActive = theme === themeKey;
 
   return (
-    <button onClick={() => setTheme(themeKey)} className={clsx(s.themeButton, isActive && s.active)}>
+    <button
+      onClick={() => setTheme(themeKey)}
+      className={clsx(s.themeButton, isActive && s.active)}
+      aria-pressed={isActive}
+      aria-label={`Set theme to ${themeKey}`}
+    >
       {children}
     </button>
   );
