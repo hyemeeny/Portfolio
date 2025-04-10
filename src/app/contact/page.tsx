@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section className={s.contactPage}>
       <Container>
-        <h2 className={s.title}>Contact with me! 🤙</h2>
+        <h2 className={s.title}>Contact me anytime! 🤙</h2>
         <div className={s.contactLine}>
           <div className={s.number}>
             <p>1</p>

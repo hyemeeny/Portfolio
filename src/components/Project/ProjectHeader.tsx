@@ -6,7 +6,7 @@ const ProjectHeader = () => {
 
   return (
     <div className={s.projectHeader}>
-      <h2 className={s.title}>It&apos;s my works! 💻</h2>
+      <h2 className={s.title}>It&apos;s my project! 💻</h2>
       <nav className={s.category}>
         <button onClick={() => setCategory("All")} className={category === "All" ? s.active : ""}>
           All
