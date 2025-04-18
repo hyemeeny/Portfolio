@@ -18,20 +18,20 @@
     gap: 3rem;
   }
 
+  .subTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--pointColor);
+    margin-bottom: 1rem;
+    @include tablet {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
   .aboutbox {
     display: grid;
     gap: 2rem;
-
-    .workTitle {
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: var(--pointColor);
-      margin-bottom: 1rem;
-      @include tablet {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-      }
-    }
 
     .title {
       border-bottom: 1px solid #8e8e8e;

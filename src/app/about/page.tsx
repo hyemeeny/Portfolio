@@ -29,13 +29,45 @@ const About = () => {
               <p>함께 고민하고 서로의 강점을 살려 부족한 부분을 보완해 나갈 때, 더 나은 서비스를 만들어갈 수 있다고 생각합니다.</p>
             </li>
           </ul>
+          <ul className={s.introduce}>
+            <li>
+              <h2 className={s.subTitle}>✨ 보이지 않는 디테일까지 책임지는 꼼꼼함</h2>
+              <p>어릴 적부터 무언가를 정리하고 계획하는 것을 좋아했습니다.</p>
+              <p>학창 시절에는 학급 문서나 자료를 정리하는 일을 자주 맡으며, 자연스럽게 책임감과 정리 습관을 기를 수 있었습니다.</p>
+              <p>
+                이러한 경험은 개발을 배우는 과정에서도 큰 도움이 되었고, 특히 컴포넌트를 구조화하거나 공통된 패턴을 찾아 재사용하는 작업이 저에게는 자연스럽고
+                즐거운 일이었습니다.
+              </p>
+            </li>
+            <li>
+              <p>이러한 꼼꼼한 성격은 팀 프로젝트에서도 강점이 되었습니다.</p>
+              <p>
+                버튼, 인풋, 모달 등 공용 컴포넌트에 필요한 Prop을 사전에 팀원들과 공유하여, 컴포넌트를 사용할 때 별도의 수정 없이 바로 활용할 수 있도록
+                하였습니다.
+              </p>
+              <p>
+                또한, 스타일 코드의 중복을 줄이기 위해 SCSS 전역 스타일에 자주 사용하는 코드를 변수로 정의하고 팀원들에게 적극적으로 공유함으로써 코드의
+                일관성과 유지보수성을 높이고, 프로젝트 설계 시간도 단축할 수 있었습니다.
+              </p>
+            </li>
+            <li>
+              <p>다만, 초기 설정 단계에서 완성도를 높이기 위해 시간을 더 들이는 경향이 있어 일정이 다소 지연되는 경우도 있었습니다.</p>
+              <p>
+                이를 개선하기 위해 GitHub 프로젝트 일정을 적극적으로 활용하고, 전체 일정의 80% 수준까지 빠르게 완성한 뒤 남은 기간 동안 보완하는 전략을 적용하여
+                프로젝트의 완성도와 성공률을 높일 수 있었습니다.
+              </p>
+            </li>
+            <li>
+              <p>이처럼 꼼꼼함이라는 강점을 바탕으로, 책임감 있게 문제를 해결하는 개발자로 꾸준히 성장해 나가고 있습니다.</p>
+            </li>
+          </ul>
         </Tag>
         <Tag tagName="heaeder" isClosed padding="large" />
         <Tag tagName="main" hasAttr attr="class" attrValue="기술과 경험, 그리고 경력" padding="large" className={s.marginTop}>
           <div className={s.workExperience}>
             <ul className={s.aboutbox}>
               <li>
-                <h2 className={s.workTitle}>✍️ 사용 기술과 경험</h2>
+                <h2 className={s.subTitle}>✍️ 사용 기술과 경험</h2>
                 <h3 className={s.title}>
                   <em>Next.js, React</em>
                 </h3>
@@ -78,7 +110,7 @@ const About = () => {
 
             <ul className={s.aboutbox}>
               <li>
-                <h2 className={s.workTitle}>💻 경력</h2>
+                <h2 className={s.subTitle}>💻 경력</h2>
                 <h3 className={s.title}>
                   <em>한국학술정보</em> <span>웹 퍼블리셔 2020.10 ~ 2024.04</span>
                 </h3>
