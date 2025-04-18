@@ -7,9 +7,10 @@ const Header = () => {
   return (
     <header className={s.header}>
       <div className={s.titleWrap}>
-        <Link href="/">
-          <VscVscode className={s.vsCodeIcon} />
+        <Link href="/" aria-label="홈으로 이동">
+          <VscVscode className={s.vsCodeIcon} aria-hidden="true" />
         </Link>
+
         <ul className={s.title}>
           <li>
             <Link href="/">File</Link>
@@ -37,8 +38,10 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
       <p className={s.name}>Ji Hyemin - Visual Studio Code</p>
-      <div className={s.dotWrap}>
+
+      <div className={s.dotWrap} aria-hidden="true">
         <span className={clsx(s.dot, s.red)}></span>
         <span className={clsx(s.dot, s.yellow)}></span>
         <span className={clsx(s.dot, s.green)}></span>

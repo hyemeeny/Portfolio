@@ -12,35 +12,35 @@ const Leftbar = () => {
     <nav className={s.leftbar}>
       <ul>
         <li className={pathname === "/" ? s.active : ""}>
-          <Link href="/">
-            <VscFiles />
+          <Link href="/" aria-label="홈">
+            <VscFiles aria-hidden="true" />
           </Link>
         </li>
         <li className={pathname.startsWith("/about") ? s.active : ""}>
-          <Link href="/about">
-            <VscSearch />
+          <Link href="/about" aria-label="소개">
+            <VscSearch aria-hidden="true" />
           </Link>
         </li>
         <li className={pathname.startsWith("/project") ? s.active : ""}>
-          <Link href="/project">
-            <VscSourceControl />
+          <Link href="/project" aria-label="프로젝트">
+            <VscSourceControl aria-hidden="true" />
           </Link>
         </li>
         <li className={pathname.startsWith("/contact") ? s.active : ""}>
-          <Link href="/contact">
-            <VscExtensions />
+          <Link href="/contact" aria-label="연락처">
+            <VscExtensions aria-hidden="true" />
           </Link>
         </li>
       </ul>
       <ul>
         <li>
-          <Link href="https://github.com/hyemeeny" target="_blank">
+          <Link href="https://github.com/hyemeeny" target="_blank" rel="noopener noreferrer" aria-label="깃허브">
             <VscAccount />
           </Link>
         </li>
         <li className={pathname.startsWith("/setting") ? s.active : ""}>
-          <Link href="/setting">
-            <VscGear />
+          <Link href="/setting" aria-label="설정">
+            <VscGear aria-hidden="true" />
           </Link>
         </li>
       </ul>

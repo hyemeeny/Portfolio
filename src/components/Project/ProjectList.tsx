@@ -11,7 +11,7 @@ const ProjectList = ({ filteredProjects, handleProjectClick }: ProjectListProps)
   return (
     <ul className={s.projectList}>
       {filteredProjects.map((project) => (
-        <li key={project.id} className={s.projectItem} onClick={() => handleProjectClick(project)}>
+        <li key={project.id} className={s.projectItem} onClick={() => handleProjectClick(project)} aria-label={`${project.title} 프로젝트 상세 보기`}>
           <ProjectCard project={project} />
         </li>
       ))}
