@@ -151,9 +151,9 @@ const About = () => {
                 <em>코드잇 스프린트 프론트엔드 9기</em> <span>2024.07 ~ 20024.12</span>
               </h3>
               <div className={s.description}>
-                <p>Next.js, React, Typescript, Javascript, git 등 프론트엔드 개발자에게 필요한 심화 기술 강의 수강</p>
-                <p>3개의 팀 프로젝트 진행으로 협업하는 방법과 다양한 기술을 통합적으로 활용하는 역량 익힘</p>
-                <p>스프린트 미션을 통한 GitHub 코드 리뷰 및 적극적인 피드백 반영</p>
+                <p>Next.js, React, TypeScript, JavaScript, Git 등 프론트엔드 핵심 기술 심화 강의 수강</p>
+                <p>3개 팀 프로젝트 참여를 통해 협업 및 다양한 기술의 통합적 활용 역량 강화</p>
+                <p>GitHub 코드 리뷰 및 피드백 반영 과정을 통해 코드 품질 개선과 소통 능력 향상</p>
               </div>
             </li>
             <li className={s.education}>
