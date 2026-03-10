@@ -1,23 +1,23 @@
-import Tag from "@/components/Tag/Tag";
-import s from "./About.module.scss";
-import Container from "@/components/Layout/Container";
+import Tag from '@/components/Tag/Tag';
+import s from './About.module.scss';
+import Container from '@/components/Layout/Container';
 
 const About = () => {
   return (
     <section className={s.aboutPage}>
       <Container>
-        <Tag tagName="html" hasAttr attr="lang" attrValue="ko" />
-        <Tag tagName="head" padding="medium" />
-        <Tag tagName="title" padding="large">
+        <Tag tagName='html' hasAttr attr='lang' attrValue='ko' />
+        <Tag tagName='head' padding='medium' />
+        <Tag tagName='title' padding='large'>
           <p>
             안녕하세요! 👋 <br />
             퍼블리셔로 시작해 프론트엔드 개발까지 확장해가고 있는 지혜민입니다.
           </p>
         </Tag>
-        <Tag tagName="title" isClosed padding="large" />
-        <Tag tagName="head" isClosed padding="medium" />
-        <Tag tagName="body" padding="medium" />
-        <Tag tagName="heaeder" hasAttr attr="class" attrValue="자기소개" padding="large">
+        <Tag tagName='title' isClosed padding='large' />
+        <Tag tagName='head' isClosed padding='medium' />
+        <Tag tagName='body' padding='medium' />
+        <Tag tagName='heaeder' hasAttr attr='class' attrValue='자기소개' padding='large'>
           <ul className={s.introduce}>
             <li>
               <p>아토믹 디자인 기반의 모듈화된 UI 설계를 선호하며, 재사용성과 유지보수성을 고려한 작업에 강점을 가지고 있습니다.</p>
@@ -25,7 +25,7 @@ const About = () => {
             </li>
             <li>
               <p>직접 만든 컴포넌트가 서비스 곳곳에서 재사용되며 완성되어 가는 과정에서 큰 보람을 느끼고,</p>
-              <p>기획자, 디자이너, 백엔드 개발자와의 적극적인 협업을 통해 프로젝트의 초기 기획부터 마무리까지 함께 고민하고 완성해본 경험이 있습니다.</p>
+              <p>기획자, 디자이너, 개발자와의 적극적인 협업을 통해 프로젝트의 초기 기획부터 마무리까지 함께 고민하고 완성해본 경험이 있습니다.</p>
             </li>
             <li>
               <p>또한, 스스로 부족한 부분은 학습하고 팀원들과 지식을 공유하며 함께 성장하는 과정을 중요하게 생각합니다.</p>
@@ -34,32 +34,28 @@ const About = () => {
           </ul>
           <ul className={s.introduce}>
             <li>
-              <h2 className={s.subTitle}>✨ 보이지 않는 디테일까지 책임지는 꼼꼼함</h2>
-              <p>어릴 적부터 무언가를 정리하고 계획하는 걸 좋아했습니다.</p>
-              <p>학창 시절에는 학급 문서나 자료를 정리하는 역할을 자주 맡으며, 자연스럽게 책임감과 정리 습관을 기를 수 있었습니다.</p>
-            </li>
-            <li>
-              <p>이런 경험은 개발을 배우는 과정에서도 큰 도움이 되었습니다.</p>
-              <p>특히 컴포넌트를 구조화하고 공통된 패턴을 찾아 재사용하는 작업은 저에게 자연스럽고 즐거운 일이었으며, 팀 프로젝트에서도 강점이 되었습니다.</p>
-              <p>공통 UI 컴포넌트의 인터페이스를 팀원들과 사전에 논의해 구조를 설계하고, 개발 단계에서 별도 수정 없이 바로 활용할 수 있도록 준비했습니다.</p>
+              <h2 className={s.subTitle}>✨ 보이지 않는 디테일까지 책임지는 꼼꼼함과 실무 중심 UI 개발</h2>
               <p>
-                또한, 스타일 코드의 중복을 줄이기 위해 SCSS 전역 스타일 시스템을 도입하고, 자주 사용하는 스타일을 모듈화해 팀과 적극적으로 공유함으로써 코드의
-                일관성과 유지보수성을 높였습니다.
+                5년간 다양한 웹사이트와 솔루션에서 UI 컴포넌트를 구조화하고,
+                <br /> 재사용 가능한 모듈 설계와 SCSS 전역 스타일 시스템을 도입하여 코드 일관성과 유지보수성을 향상시켰습니다.
               </p>
             </li>
             <li>
               <p>
-                초기 설정 단계에서 완성도를 높이려다 일정이 지연된 경험이 있지만, 이를 개선하기 위해 GitHub 프로젝트 보드를 적극 활용하며,
-                <br /> 전체 일정의 80% 수준까지 빠르게 완료한 뒤 보완하는 전략을 적용했습니다.
+                공통 UI 컴포넌트 인터페이스를 팀원과 논의하고, 개발 단계에서 별도 수정 없이 바로 활용하도록 준비하며 UI/UX 품질과 팀 협업 효율을 높였습니다.
               </p>
             </li>
             <li>
-              <p>이처럼 꼼꼼함을 강점으로 책임감 있게 문제를 해결하며 꾸준히 성장하는 개발자입니다.</p>
+              <p>
+                Jira 칸반 보드를 활용해 일정과 작업을 체계적으로 관리하며, 퍼블리싱뿐 아니라 UI 개발 전반에 걸쳐 사용자 경험 향상과 팀 생산성 개선에
+                기여하였습니다.
+              </p>
+              <p>이처럼 꼼꼼함을 강점으로 책임감 있게 문제를 해결하는 개발자로 꾸준히 성장하고 있습니다.</p>
             </li>
           </ul>
         </Tag>
-        <Tag tagName="heaeder" isClosed padding="large" />
-        <Tag tagName="main" hasAttr attr="class" attrValue="기술과 경험, 그리고 경력" padding="large" className={s.marginTop}>
+        <Tag tagName='heaeder' isClosed padding='large' />
+        <Tag tagName='main' hasAttr attr='class' attrValue='기술과 경험, 그리고 경력' padding='large' className={s.marginTop}>
           <div className={s.workExperience}>
             <ul className={s.aboutbox}>
               <li>
@@ -111,11 +107,12 @@ const About = () => {
                   <em>커넥트웨이브</em> <span>웹 퍼블리셔 2025.05 ~ 재직중</span>
                 </h3>
                 <div className={s.description}>
-                  <p>React 기반 AI 에디터 솔루션 프로젝트에 참여하여, 블록 단위 상세 페이지 스킨 설계 및 퍼블리싱 수행</p>
-                  <p>재사용 가능한 UI 컴포넌트와 디자인 시스템 가이드 구축을 통해 일관된 디자인 구현과 개발 생산성 향상에 기여</p>
-                  <p>자사 React 웹사이트 및 2.0 솔루션을 유지보수하며, 기획안에 따른 UI 컴포넌트 개선 작업으로 UX 품질 향상에 기여</p>
-                  <p>이벤트 프로모션 페이지를 퍼블리싱하며, 다양한 브라우저와 디바이스 환경에서 접근성을 강화하고 사용자 유입률 향상에 기여</p>
-                  <p>Git/GitHub을 활용한 형상 관리와 Jira 기반 협업으로 개발자·기획·디자인 팀 간 원활한 커뮤니케이션 수행</p>
+                  <p>React 기반 셀핏(AI 상세 페이지 제작 서비스) 프로젝트 참여</p>
+                  <p>상세 페이지 스킨을 블록 단위로 설계 및 퍼블리싱하여 다양한 템플릿 적용이 가능하도록 구조화</p>
+                  <p>버튼·모달 등 재사용 가능한 UI 컴포넌트 구현 및 디자인 가이드 기반 퍼블리싱으로 일관된 UI 구현에 기여</p>
+                  <p>자사 Next.js 기반 웹사이트 및 솔루션 유지보수를 담당하며 기획안에 따른 UI 컴포넌트 개선으로 사용자 경험 품질 향상에 기여</p>
+                  <p>이벤트·프로모션 페이지 퍼블리싱 및 다양한 브라우저·디바이스 환경을 고려한 반응형·접근성 개선 적용</p>
+                  <p>Git/GitHub 기반 형상 관리 및 배포 참여, Jira 협업을 통한 개발·기획·디자인 팀 간 커뮤니케이션 수행</p>
                 </div>
               </li>
               <li>
@@ -124,10 +121,10 @@ const About = () => {
                 </h3>
                 <div className={s.description}>
                   <p>총 37개 학회·대학 홈페이지와 논문 투고 시스템(JOSS) 구축 및 유지보수</p>
-                  <p>SCSS 기반 모듈화 스타일링과 모바일·태블릿·PC 대응 반응형 구현을 통해 유지보수성과 코드 재사용성 향상에 기여</p>
-                  <p>낙후된 테이블 코드를 시멘틱 마크업으로 전면 개선하고, SEO 최적화를 통해 추가 계약률 24% 증가 달성</p>
-                  <p>기획·자료 검토·견적 산출부터 사후 고객 서비스까지 전 과정 체계적 관리로 장기적 고객 신뢰 및 유치 확보</p>
-                  <p>FTP 프로토콜을 활용해 퍼블리싱 페이지 직접 배포 및 robots.txt와 사이트맵 설정으로 검색 엔진 최적화에 기여</p>
+                  <p>SCSS 기반 컴포넌트 단위 스타일 모듈화와 모바일·태블릿·PC 대응 반응형 웹 구현</p>
+                  <p>테이블 기반 레이아웃 마크업을 시멘틱 구조로 개선하고 SEO 친화적 마크업을 적용하여 검색 노출 환경 개선</p>
+                  <p>기획·자료 검토·견적 산출부터 사후 고객 서비스까지 프로젝트 전 과정 관리로 장기적 고객 관계 유지에 기여</p>
+                  <p>FTP 프로토콜을 활용한 퍼블리싱 페이지 배포 및 robots.txt, 사이트맵 설정을 통한 검색 엔진 최적화 지원</p>
                 </div>
               </li>
               <li>
@@ -136,15 +133,15 @@ const About = () => {
                 </h3>
                 <div className={s.description}>
                   <p>인터넷 면세점 사이트 유지보수 및 이벤트 페이지 구축</p>
-                  <p>JSP 기반 환경에서 페이지 구조 개선 및 마크업·스타일 코드 리팩토링으로 화면 일관성과 사용성 향상</p>
-                  <p>기획·디자인·개발 팀과 협업하여 고객 맞춤형 UI/UX 구현 및 페이지 최적화를 통해 사용자 유입률 13% 증가</p>
+                  <p>JSP 기반 환경에서 페이지 구조 개선 및 마크업·스타일 코드 리팩토링을 통해 화면 일관성과 사용성 개선</p>
+                  <p>기획·디자인·개발 팀과 협업하여 고객 맞춤형 UI/UX 구현 및 페이지 최적화 수행</p>
                 </div>
               </li>
             </ul>
           </div>
         </Tag>
-        <Tag tagName="main" isClosed padding="large" />
-        <Tag tagName="footer" hasAttr attr="class" attrValue="교육 및 자격증" padding="large" className={s.marginTop}>
+        <Tag tagName='main' isClosed padding='large' />
+        <Tag tagName='footer' hasAttr attr='class' attrValue='교육 및 자격증' padding='large' className={s.marginTop}>
           <ul className={s.aboutbox}>
             <li>
               <h3 className={s.title}>
@@ -152,7 +149,7 @@ const About = () => {
               </h3>
               <div className={s.description}>
                 <p>Next.js, React, TypeScript, JavaScript, Git 등 프론트엔드 핵심 기술 심화 강의 수강</p>
-                <p>3개 팀 프로젝트 참여를 통해 협업 및 다양한 기술의 통합적 활용 역량 강화</p>
+                <p>3개 팀 프로젝트 참여를 통해 협업 경험과 다양한 기술 활용 역량 강화</p>
                 <p>GitHub 코드 리뷰 및 피드백 반영 과정을 통해 코드 품질 개선과 소통 능력 향상</p>
               </div>
             </li>
@@ -202,9 +199,9 @@ const About = () => {
             </li>
           </ul>
         </Tag>
-        <Tag tagName="footer" isClosed padding="large" />
-        <Tag tagName="body" isClosed padding="medium" />
-        <Tag tagName="html" isClosed />
+        <Tag tagName='footer' isClosed padding='large' />
+        <Tag tagName='body' isClosed padding='medium' />
+        <Tag tagName='html' isClosed />
       </Container>
     </section>
   );
