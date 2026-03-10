@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import s from "@/styles/Home.module.scss";
-import { Typewriter } from "react-simple-typewriter";
-import { VscVscode } from "react-icons/vsc";
-import Container from "@/components/Layout/Container";
-import Button from "@/components/Button/Button";
+import Link from 'next/link';
+import s from '@/styles/Home.module.scss';
+import { Typewriter } from 'react-simple-typewriter';
+import { VscVscode } from 'react-icons/vsc';
+import Container from '@/components/Layout/Container';
+import Button from '@/components/Button/Button';
 
 const Home = () => {
   return (
@@ -18,19 +18,19 @@ const Home = () => {
               words={["Hello👋 Hyemin's world!", "Welcome Hyemin's portfolio!"]}
               loop={5}
               cursor
-              cursorStyle="|"
+              cursorStyle='|'
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={1000}
             />
           </h1>
-          <p className={s.homeSubTitle}>I&apos;m Frontend Developer</p>
+          <p className={s.homeSubTitle}>I&apos;m Publisher & Frontend Developer</p>
           <div className={s.buttonWrap}>
-            <Button type="fill">
-              <Link href="/project">View Works</Link>
+            <Button type='fill'>
+              <Link href='/project'>View Works</Link>
             </Button>
-            <Button type="empty">
-              <Link href="/about">About me</Link>
+            <Button type='empty'>
+              <Link href='/about'>About me</Link>
             </Button>
           </div>
         </div>
