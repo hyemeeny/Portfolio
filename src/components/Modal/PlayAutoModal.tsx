@@ -21,17 +21,18 @@ const PlayAutoModal = () => {
         <div className={s.pageList}>
           {playAutoPageData.map((page: ModalPageProps) => (
             <article key={page.title} className={s.pageItem} aria-labelledby={`page-${page.title}`}>
-              <h3 className={s.pageTitle}>{page.title}</h3>
+              <h3 className={s.pageTitle}>
+                {page.url && (
+                  <Link href={page.url} target='_blank' className={s.link} aria-label={`${page.title} 페이지 열기`}>
+                    {page.title}
+                  </Link>
+                )}
+              </h3>
               <ul className={s.skillDescription}>
                 {page.description.map((desc) => (
                   <li key={desc}>{desc}</li>
                 ))}
               </ul>
-              {page.url && (
-                <Link href={page.url} target='_blank' className={s.link} aria-label={`${page.title} 페이지 열기`}>
-                  {page.url}
-                </Link>
-              )}
               {page.image && <Image src={page.image} width={800} height={100} alt={page.title} unoptimized />}
             </article>
           ))}
