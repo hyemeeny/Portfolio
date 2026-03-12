@@ -104,23 +104,23 @@
             transition: all 0.2s ease;
           }
         }
+      }
 
-        .link {
-          font-size: 1.25rem;
-          transition: all 0.2s ease;
-          @include tablet {
-            font-size: 1rem;
-            @include mobile {
-              font-size: 0.875rem;
-            }
+      .link {
+        font-size: 1.25rem;
+        transition: all 0.2s ease;
+        @include tablet {
+          font-size: 1rem;
+          @include mobile {
+            font-size: 0.875rem;
           }
         }
+      }
 
-        .github,
-        .link {
-          &:hover {
-            color: var(--pointColor);
-          }
+      .github,
+      .link {
+        &:hover {
+          color: var(--pointColor);
         }
       }
 
