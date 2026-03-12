@@ -47,6 +47,16 @@ export const playAutoPageData = [
     image: '/images/playauto/sellfit_ai.png',
     url: 'https://sellfit-ai.plto.com/editor',
   },
+  {
+    title: '프로모션 페이지',
+    description: [
+      '마케팅 팀과 협업하여 프로모션 페이지 UI/UX를 개선하고, React로 주요 기능과 모달/버튼 인터랙션을 구현했습니다',
+      '메타태그와 구조화된 SEO 최적화를 적용하여 검색 효율을 높였습니다.',
+      '이미지 Lazy Loading과 IntersectionObserver를 활용하여 웹 성능을 최적화하고 페이지 로딩 속도를 개선, 사용자 경험을 향상시켰습니다.',
+    ],
+    image: '/images/playauto/promotion.png',
+    url: 'https://plto.com/event/Promo_2508',
+  },
 ];
 
 export const spaceLinkPageData = [
