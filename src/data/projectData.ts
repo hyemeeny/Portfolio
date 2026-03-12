@@ -4,7 +4,7 @@ export const projectData: ProjectProps[] = [
   {
     id: 23,
     title: 'PLAYAUTO',
-    description: '커넥트웨이브 플레이오토 사업부에서 자사 홈페이지의 페이지를 개선하고 반응형으로 구현하며 UI/UX를 유지보수한 프로젝트입니다.',
+    description: '홈페이지 및 서비스 UI/UX 개선, 반응형 구현, 블록 단위 퍼블리싱, 공용 컴포넌트 제작 등 다양한 프로젝트를 수행했습니다.',
     image: '/images/playauto/playauto.png',
     category: '🏢 Company',
   },

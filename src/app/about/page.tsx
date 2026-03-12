@@ -20,7 +20,7 @@ const About = () => {
         <Tag tagName='heaeder' hasAttr attr='class' attrValue='자기소개' padding='large'>
           <ul className={s.introduce}>
             <li>
-              <p>아토믹 디자인 기반의 모듈화된 UI 설계를 선호하며, 재사용성과 유지보수성을 고려한 작업에 강점을 가지고 있습니다.</p>
+              <p>컴포넌트 기반의 모듈화된 UI 설계를 지향하며, 재사용성과 유지보수성을 고려한 구조로 UI를 구현합니다.</p>
               <p>사용자 입장에서 더 편리한 화면을 만들기 위해 끊임없이 고민하며, 코드의 유연성과 확장성을 중요하게 생각합니다.</p>
             </li>
             <li>
@@ -190,9 +190,6 @@ const About = () => {
                   </p>
                   <p>
                     GTQ포토샵1급 | 한국생산성본부 &#40;KPC&#41;<span>2016.06</span>
-                  </p>
-                  <p>
-                    OCJP | Oracle<span>2016.01</span>
                   </p>
                 </div>
               </div>

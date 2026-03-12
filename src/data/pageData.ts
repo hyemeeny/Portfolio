@@ -2,19 +2,22 @@ export const playAutoPageData = [
   {
     title: '이용요금 페이지',
     description: [
-      '탭 기능을 활용하여 사용자가 버전별 요금을 쉽게 확인할 수 있도록 구현했습니다.',
-      '각 탭 클릭 시 해당 요금 정보를 바로 표시하도록 구성했습니다.',
-      '토글 버튼을 통해 할인률 적용 금액을 직관적으로 확인할 수 있도록 구현했습니다.',
+      '탭 기능과 JSON 데이터 바인딩을 활용하여 사용자가 버전별 요금을 쉽게 확인할 수 있도록 구현했습니다.',
+      '버전별 이동 버튼을 분기 처리하고, 결제 주기별 할인 기능을 적용하여 사용자에게 직관적인 요금 정보를 제공했습니다.',
+      '토글 버튼과 동적 계산을 통해 할인 적용 금액을 실시간으로 확인할 수 있도록 구현했으며, 툴팁을 활용해 각 요금제의 상세 기능 정보를 제공합니다.',
     ],
     image: '/images/playauto/charge.png',
+    url: 'https://www.plto.com/introduction/Charge/?tabActive=0',
   },
   {
     title: '통합솔루션 소개 페이지',
     description: [
       '풀페이지 스크롤 기능을 적용하여 각 솔루션의 특징을 한눈에 볼 수 있도록 구현했습니다.',
-      '스크롤 시 애니메이션 효과로 콘텐츠 전환이 자연스럽게 이루어지도록 구성했습니다.',
+      '해당 섹션 진입 시 애니메이션이 적용되도록 IntersectionObserver를 활용하여 콘텐츠 전환을 구현했습니다.',
+      '터치 스크롤 이벤트에서 발생하는 이벤트 버블링을 e.stopPropagation()으로 제어했으나 링크 작동 문제와 사파리 충돌이 발생하여, CSS Scroll Snap을 적용해 크로스브라우징 문제를 해결하고 부드러운 슬라이드 전환을 구현했습니다.',
     ],
     image: '/images/playauto/info.png',
+    url: 'https://www.plto.com/introduction/Info',
   },
   {
     title: '브랜드타겟 페이지',
@@ -23,6 +26,7 @@ export const playAutoPageData = [
       '브랜드 로고에 서로 엇갈리는 무한 슬라이드 애니메이션을 적용하여 동적인 UI 효과를 구현했습니다.',
     ],
     image: '/images/playauto/brandTarget.png',
+    url: 'https://www.plto.com/ads/BrandTarget',
   },
   {
     title: '셀핏AI 페이지',
@@ -32,6 +36,16 @@ export const playAutoPageData = [
       'sticky 플로팅바를 적용하여 주요 정보를 항상 확인할 수 있도록 구현했습니다.',
     ],
     image: '/images/playauto/sellfit.png',
+    url: 'https://www.plto.com/additional/Sellfit',
+  },
+  {
+    title: '셀핏AI 프로젝트',
+    description: [
+      '상세 페이지 스킨을 블록 단위로 설계하고 퍼블리싱하여, 다양한 템플릿에 쉽게 적용할 수 있도록 구조화했습니다.',
+      '공용 모달과 버튼 컴포넌트를 제작하고, Zustand를 활용해 모달 상태를 관리하여 코드 재사용성과 유지보수성을 강화했습니다.',
+    ],
+    image: '/images/playauto/sellfit_ai.png',
+    url: 'https://sellfit-ai.plto.com/editor',
   },
 ];
 
