@@ -24,7 +24,7 @@ const Home = () => {
               delaySpeed={1000}
             />
           </h1>
-          <p className={s.homeSubTitle}>I&apos;m Publisher & Frontend Developer</p>
+          <p className={s.homeSubTitle}>I&apos;m Frontend Developer</p>
           <div className={s.buttonWrap}>
             <Button type='fill'>
               <Link href='/project'>View Works</Link>
