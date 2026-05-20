@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  height: 36.67px;
+
+  li {
+    border-right: 1px solid var(--borderColor);
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &.active {
+      border-top: 1px solid var(--pointColor);
+      background-color: var(--subColor);
+      border-bottom: none;
+    }
+
+    a {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  @include navItemBase;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mainColor);
+
+  li {
+    &.active {
+      background-color: var(--subColor);
+    }
+
+    a {
+      padding: 0.3rem 2rem 0.3rem 0.5rem;
+    }
+  }
+
+  @include navItemBase;
+}
