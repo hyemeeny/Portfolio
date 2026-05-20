@@ -1,4 +1,4 @@
-@import "mixins";
+@import 'mixins';
 
 // Colors
 $fontColor: #dfdfdf;
@@ -36,7 +36,7 @@ $fontColor: #dfdfdf;
 }
 
 @mixin dot {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: calc((27.2px - 3px) / 2);
@@ -47,6 +47,45 @@ $fontColor: #dfdfdf;
   border-radius: 100px;
   @include tablet {
     top: calc((23.79px - 3px) / 2);
+  }
+}
+
+@mixin navItemBase {
+  li {
+    &.active {
+      background-color: var(--subColor);
+    }
+
+    a {
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      svg {
+        font-size: 1.25rem;
+      }
+
+      .reactIcon {
+        color: #00dcff;
+      }
+
+      .htmlIcon {
+        color: #e7521f;
+      }
+
+      .jsIcon {
+        color: #f7e025;
+      }
+
+      .scssIcon {
+        color: #ce6b9c;
+      }
+
+      .jsonIcon {
+        color: #fbc02d;
+      }
+    }
   }
 }
 
