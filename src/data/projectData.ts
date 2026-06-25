@@ -2,28 +2,31 @@ import { ProjectProps } from '@/types/project';
 
 export const projectData: ProjectProps[] = [
   {
-    id: 23,
+    id: 'playauto',
+    modalType: 'playAuto',
     title: 'PLAYAUTO',
     description: '홈페이지 및 서비스 UI/UX 개선, 반응형 구현, 블록 단위 퍼블리싱, 공용 컴포넌트 제작 등 다양한 프로젝트를 수행했습니다.',
     image: '/images/playauto/playauto.png',
     category: '🏢 Company',
   },
   {
-    id: 1,
+    id: 'spacelink',
+    modalType: 'spaceLink',
     title: '🚀 SpaceLink',
     description: '우주의 별들처럼, 나만의 특별한 링크를 한 곳에 모을 수 있는 개인화된 링크 관리 플랫폼입니다.',
     image: '/images/spaceLink/spaceLink.jpg',
     category: '🙋‍♀️ Personal',
   },
   {
-    id: 2,
+    id: 'travelmaker',
+    modalType: 'travelmaker',
     title: '✈️ TRAVEL MAKER',
     description: '사용자가 판매자가 되어 체험을 만들고, 동시에 체험자가 되어 체험을 예약하는 체험 예약 플랫폼입니다.',
     image: '/images/travelmaker/travelmaker.jpg',
     category: '🧑‍🤝‍🧑 Team',
   },
   {
-    id: 3,
+    id: 'ksi-1',
     title: 'NEUL STUDIO',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/neul-studio.com_.png',
@@ -31,7 +34,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://neul-studio.com/',
   },
   {
-    id: 4,
+    id: 'ksi-2',
     title: '탄소중립순환경제학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/acce.or.kr_.png',
@@ -39,7 +42,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://acce.or.kr/',
   },
   {
-    id: 5,
+    id: 'ksi-3',
     title: '한국보건행정학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/kshpa.org_.png',
@@ -47,7 +50,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://kshpa.org/',
   },
   {
-    id: 6,
+    id: 'ksi-4',
     title: '현대영어교육학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/meeso.or.kr_.png',
@@ -55,7 +58,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://meeso.or.kr/',
   },
   {
-    id: 7,
+    id: 'ksi-5',
     title: '한국노어노문학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/karll.or.kr_.png',
@@ -63,7 +66,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://karll.or.kr/',
   },
   {
-    id: 8,
+    id: 'ksi-6',
     title: '한국언어정보학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/ksli.or.kr_.png',
@@ -71,7 +74,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://ksli.or.kr/',
   },
   {
-    id: 9,
+    id: 'ksi-7',
     title: '한국PR학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/kaspr.net_.png',
@@ -79,7 +82,7 @@ export const projectData: ProjectProps[] = [
     link: 'http://kaspr.net/',
   },
   {
-    id: 10,
+    id: 'ksi-8',
     title: '한국사회교과교육학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/kasse.or.kr_.png',
@@ -87,7 +90,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://kasse.or.kr/',
   },
   {
-    id: 11,
+    id: 'ksi-9',
     title: '홍익대학교 법학연구소',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/hongiklawcenter.kr_.png',
@@ -95,7 +98,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://hongiklawcenter.kr/',
   },
   {
-    id: 12,
+    id: 'ksi-10',
     title: '현대영화연구소',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/cocri.hanyang.ac.kr_.png',
@@ -103,7 +106,7 @@ export const projectData: ProjectProps[] = [
     link: 'http://cocri.hanyang.ac.kr/',
   },
   {
-    id: 13,
+    id: 'ksi-11',
     title: '심훈선생기념사업회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/shimhoon.com_.png',
@@ -111,7 +114,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://shimhoon.com/',
   },
   {
-    id: 14,
+    id: 'ksi-12',
     title: '산림경영정보학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/ksfmi.co.kr_.png',
@@ -119,7 +122,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://ksfmi.co.kr/',
   },
   {
-    id: 15,
+    id: 'ksi-13',
     title: '아프리카미래학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/afs.re.kr_.png',
@@ -127,7 +130,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://afs.re.kr/',
   },
   {
-    id: 16,
+    id: 'ksi-14',
     title: '한국운동역학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/kssb.kr_.png',
@@ -135,7 +138,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://xn--3e0bv5jy2qywaw94cna74s.kr/',
   },
   {
-    id: 17,
+    id: 'ksi-15',
     title: '한국민족운동사학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/hknm.or.kr_.png',
@@ -143,7 +146,7 @@ export const projectData: ProjectProps[] = [
     link: 'http://hknm.or.kr/',
   },
   {
-    id: 18,
+    id: 'ksi-16',
     title: '부경역사연구소',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/pkh.co.kr_.png',
@@ -151,7 +154,7 @@ export const projectData: ProjectProps[] = [
     link: 'http://pkh.co.kr/',
   },
   {
-    id: 19,
+    id: 'ksi-17',
     title: '한국지명학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/placename.or.kr_.png',
@@ -159,7 +162,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://placename.or.kr/',
   },
   {
-    id: 20,
+    id: 'ksi-18',
     title: '한말연구학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/hanmal.or.kr_.png',
@@ -167,7 +170,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://hanmal.or.kr/',
   },
   {
-    id: 21,
+    id: 'ksi-19',
     title: '열처리공학회 학술대회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/ksht.or.kr_.png',
@@ -175,7 +178,7 @@ export const projectData: ProjectProps[] = [
     link: 'https://www.ksht.or.kr/cfr/202310/index.asp',
   },
   {
-    id: 22,
+    id: 'ksi-20',
     title: '한국광물학회',
     description: '한국학술정보에서 사내 빌더를 활용하여 다양한 학회의 홈페이지를 유지보수하고 퍼블리싱한 프로젝트입니다.',
     image: '/images/ksi/mskorea.or.kr_.png',

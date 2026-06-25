@@ -1,18 +1,22 @@
-import ProjectCard from "@/components/Project/ProjectCard";
-import s from "./ProjectList.module.scss";
-import { ProjectProps } from "@/types/project";
-
-interface ProjectListProps {
-  filteredProjects: ProjectProps[];
-  handleProjectClick: (project: ProjectProps) => void;
-}
+import Link from 'next/link';
+import s from './ProjectList.module.scss';
+import ProjectCard from '@/components/Project/ProjectCard';
+import { ProjectListProps } from '@/types/project';
 
 const ProjectList = ({ filteredProjects, handleProjectClick }: ProjectListProps) => {
   return (
     <ul className={s.projectList}>
       {filteredProjects.map((project) => (
-        <li key={project.id} className={s.projectItem} onClick={() => handleProjectClick(project)} aria-label={`${project.title} 프로젝트 상세 보기`}>
-          <ProjectCard project={project} />
+        <li key={project.id} className={s.projectItem}>
+          {project.link ? (
+            <Link href={project.link} target='_blank' rel='noopener noreferrer'>
+              <ProjectCard project={project} />
+            </Link>
+          ) : (
+            <div onClick={() => handleProjectClick(project)}>
+              <ProjectCard project={project} />
+            </div>
+          )}
         </li>
       ))}
     </ul>

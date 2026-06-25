@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { projectData } from '@/data/projectData';
 import { ProjectProps } from '@/types/project';
 import { useProjectStore } from '@/store/projectStore';
@@ -14,26 +13,12 @@ import TravelmakerModal from '@/components/Modal/TravelmakerModal';
 import PlayAutoModal from '@/components/Modal/PlayAutoModal';
 
 const Project = () => {
-  const [modalType, setModalType] = useState<string>('');
   const { category } = useProjectStore();
-  const { openModal } = useModalStore();
+  const { openModal, modalType } = useModalStore();
 
   const handleProjectClick = (project: ProjectProps) => {
-    switch (project.id) {
-      case 1:
-        setModalType('spaceLink');
-        openModal(project, 'spaceLink');
-        break;
-      case 2:
-        setModalType('travelmaker');
-        openModal(project, 'travelmaker');
-        break;
-      case 23:
-        setModalType('playAuto');
-        openModal(project, 'playAuto');
-        break;
-      default:
-        window.open(project.link, '_blank', 'noopener,noreferrer');
+    if (project.modalType) {
+      openModal(project, project.modalType);
     }
   };
 
