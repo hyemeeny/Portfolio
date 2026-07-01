@@ -1,20 +1,41 @@
+export const playAutoTechStack = [
+  { id: 1, name: 'Next.js' },
+  { id: 2, name: 'React' },
+  { id: 3, name: 'TypeScript' },
+  { id: 4, name: 'JavaScript' },
+  { id: 5, name: 'TailwindCSS' },
+  { id: 6, name: 'Zustand' },
+  { id: 7, name: 'TanStack Query' },
+  { id: 8, name: 'Figma' },
+];
+
+export const ksiTechStack = [
+  { id: 1, name: 'HTML/CSS' },
+  { id: 2, name: 'SCSS' },
+  { id: 3, name: 'JavaScript' },
+  { id: 4, name: 'jQuery' },
+  { id: 5, name: 'Bootstrap' },
+  { id: 6, name: 'Photoshop' },
+  { id: 7, name: 'Adobe XD' },
+];
+
 export const spaceLinkTechStack = [
-  { id: 1, name: "Next.js" },
-  { id: 2, name: "React" },
-  { id: 3, name: "TypeScript" },
-  { id: 4, name: "tailwindcss" },
-  { id: 5, name: "zustand" },
-  { id: 6, name: "Zod" },
-  { id: 7, name: "React-Hook-Form" },
-  { id: 8, name: "React-fullpage" },
+  { id: 1, name: 'Next.js' },
+  { id: 2, name: 'React' },
+  { id: 3, name: 'TypeScript' },
+  { id: 4, name: 'JavaScript' },
+  { id: 5, name: 'TailwindCSS' },
+  { id: 6, name: 'Zustand' },
+  { id: 7, name: 'TanStack Query' },
+  { id: 8, name: 'Figma' },
 ];
 
 export const travelmakerTechStack = [
-  { id: 1, name: "Next.js" },
-  { id: 2, name: "React" },
-  { id: 3, name: "TypeScript" },
-  { id: 4, name: "SCSS Module" },
-  { id: 5, name: "zustand" },
-  { id: 6, name: "Zod" },
-  { id: 7, name: "React-Hook-Form" },
+  { id: 1, name: 'Next.js' },
+  { id: 2, name: 'React' },
+  { id: 3, name: 'TypeScript' },
+  { id: 4, name: 'JavaScript' },
+  { id: 5, name: 'SCSS Module' },
+  { id: 6, name: 'Zustand' },
+  { id: 7, name: 'Figma' },
 ];

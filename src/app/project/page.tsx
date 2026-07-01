@@ -11,6 +11,7 @@ import Modal from '@/components/Modal/Modal';
 import SpaceLinkModal from '@/components/Modal/SpaceLinkModal';
 import TravelmakerModal from '@/components/Modal/TravelmakerModal';
 import PlayAutoModal from '@/components/Modal/PlayAutoModal';
+import KsiModal from '@/components/Modal/KsiModal';
 
 const Project = () => {
   const { category } = useProjectStore();
@@ -36,9 +37,10 @@ const Project = () => {
       </Container>
 
       <Modal>
-        {modalType === 'spaceLink' && <SpaceLinkModal />}
-        {modalType === 'travelmaker' && <TravelmakerModal />}
         {modalType === 'playAuto' && <PlayAutoModal />}
+        {modalType === 'ksi' && <KsiModal />}
+        {modalType === 'spaceLink' && <SpaceLinkModal />}
+        {modalType === 'travelMaker' && <TravelmakerModal />}
       </Modal>
     </section>
   );

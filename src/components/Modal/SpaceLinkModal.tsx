@@ -3,28 +3,27 @@ import Image from 'next/image';
 import s from './Modal.module.scss';
 import { ModalPageProps } from '@/types/modal';
 import { spaceLinkTechStack } from '@/data/techStackData';
-import { spaceLinkPageData } from '@/data/pageData';
+import { spaceLinkData } from '@/data/pageData';
 import { VscGithubInverted } from 'react-icons/vsc';
+import SubTitle from '@/components/Modal/components/SubTitle';
 
 const SpaceLinkModal = () => {
   return (
     <>
       <div className={s.url}>
-        <h2 className={s.subTitle}>
+        <SubTitle>
           🔗 배포 주소
           <Link href={'https://github.com/hyemeeny/SpaceLink'} target='_blank' className={s.github} aria-label='GitHub 저장소로 이동'>
             <VscGithubInverted aria-hidden='true' />
           </Link>
-        </h2>
+        </SubTitle>
         <Link href={'https://spacelink-hyemin.vercel.app'} target='_blank' className={s.link} aria-label='SpaceLink 배포 사이트 열기'>
           https://spacelink-hyemin.vercel.app
         </Link>
       </div>
 
       <div className={s.techStack}>
-        <h2 id='tech-stack' className={s.subTitle}>
-          ⚙️ 기술 스택
-        </h2>
+        <SubTitle>⚙️ 기술 스택</SubTitle>
         <ul>
           {spaceLinkTechStack.map((tech) => (
             <li key={tech.id}>{tech.name}</li>
@@ -33,11 +32,9 @@ const SpaceLinkModal = () => {
       </div>
 
       <div className={s.pageWrap}>
-        <h2 id='pages' className={s.subTitle}>
-          📺 작업 페이지
-        </h2>
+        <SubTitle participation='참여도 100%'>📺 작업 프로젝트</SubTitle>
         <div className={s.pageList}>
-          {spaceLinkPageData.map((page: ModalPageProps) => (
+          {spaceLinkData.map((page: ModalPageProps) => (
             <article key={page.title} className={s.pageItem} aria-labelledby={`page-${page.title}`}>
               <h3 className={s.pageTitle}>{page.title}</h3>
               <ul className={s.skillDescription}>

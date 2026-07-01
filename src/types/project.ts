@@ -4,7 +4,7 @@ export interface ProjectProps {
   description: string;
   image: string;
   category: string;
-  modalType?: 'spaceLink' | 'travelmaker' | 'playAuto';
+  modalType?: 'spaceLink' | 'ksi' | 'travelMaker' | 'playAuto';
   link?: string;
 }
 

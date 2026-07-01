@@ -3,28 +3,27 @@ import Image from 'next/image';
 import s from './Modal.module.scss';
 import { ModalPageProps } from '@/types/modal';
 import { travelmakerTechStack } from '@/data/techStackData';
-import { travelmakerPageData } from '@/data/pageData';
+import { travelmakerData } from '@/data/pageData';
 import { VscGithubInverted } from 'react-icons/vsc';
+import SubTitle from '@/components/Modal/components/SubTitle';
 
 const TravelmakerModal = () => {
   return (
     <>
       <div className={s.url}>
-        <h2 className={s.subTitle}>
+        <SubTitle>
           🔗 배포 주소
           <Link href={'https://github.com/hyemeeny/travelmaker'} target='_blank' className={s.github} aria-label='GitHub 저장소로 이동'>
             <VscGithubInverted aria-hidden='true' />
           </Link>
-        </h2>
+        </SubTitle>
         <Link href={'https://travelmaker-ten.vercel.app'} target='_blank' className={s.link} aria-label='travelmaker 배포 사이트 열기'>
           https://travelmaker-ten.vercel.app
         </Link>
       </div>
 
       <div className={s.techStack}>
-        <h2 id='tech-stack' className={s.subTitle}>
-          ⚙️ 기술 스택
-        </h2>
+        <SubTitle>⚙️ 기술 스택</SubTitle>
         <ul>
           {travelmakerTechStack.map((tech) => (
             <li key={tech.id}>{tech.name}</li>
@@ -33,11 +32,9 @@ const TravelmakerModal = () => {
       </div>
 
       <div className={s.pageWrap}>
-        <h2 id='pages' className={s.subTitle}>
-          📺 작업 페이지
-        </h2>
+        <SubTitle participation='참여도 100%'>📺 작업 프로젝트</SubTitle>
         <div className={s.pageList}>
-          {travelmakerPageData.map((page: ModalPageProps) => (
+          {travelmakerData.map((page: ModalPageProps) => (
             <article key={page.title} className={s.pageItem} aria-labelledby={`page-${page.title}`}>
               <h3 className={s.pageTitle}>{page.title}</h3>
               <ul className={s.skillDescription}>
