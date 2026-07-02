@@ -42,7 +42,7 @@ const SpaceLinkModal = () => {
                   <li key={desc}>{desc}</li>
                 ))}
               </ul>
-              {page.image && <Image src={page.image} width={800} height={100} alt={page.title} unoptimized />}
+              {page.image && <Image src={page.image} width={800} height={450} alt={page.title} priority sizes='(max-width: 768px) 100vw, 800px' />}
             </article>
           ))}
         </div>
