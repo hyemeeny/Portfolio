@@ -61,13 +61,12 @@ const About = () => {
               <li>
                 <h2 className={s.subTitle}>✍️ 사용 기술과 경험</h2>
                 <h3 className={s.title}>
-                  <em>Next.js, React</em>
+                  <em>React / Next.js</em>
                 </h3>
                 <div className={s.description}>
-                  <p>컴포넌트를 Atomic한 단위로 설계하는 것을 선호하며, 재사용성과 확장성을 고려한 개발을 지향합니다.</p>
-                  <p>반복적으로 사용되는 비즈니스 로직은 커스텀 Hook으로 모듈화하여 유지보수성과 가독성을 높입니다.</p>
-                  <p>불필요한 리렌더링을 최소화하기 위해 useEffect, useCallback, useMemo를 활용하여 컴포넌트를 최적화합니다.</p>
-                  <p>Next.js 14 App Router 환경에서 Server Actions을 활용한 개발 경험이 있습니다.</p>
+                  <p>컴포넌트를 블록 단위로 설계하여 재사용성과 확장성을 고려한 UI 구조를 구현합니다.</p>
+                  <p>Server Action·서버 컴포넌트 기반 데이터 패칭 구조 설계 및 React Query를 활용한 캐싱·성능 개선 경험이 있습니다.</p>
+                  <p>Next.js App Router 환경에서 UI 구현 및 유지보수 경험이 있습니다.</p>
                 </div>
               </li>
               <li>
@@ -81,21 +80,49 @@ const About = () => {
               </li>
               <li>
                 <h3 className={s.title}>
-                  <em>Zustand</em>
+                  <em>State Management</em>
                 </h3>
                 <div className={s.description}>
-                  <p>전역 상태 관리가 필요한 경우 Zustand를 활용하여 효율적으로 상태를 관리하고, 가독성과 유지보수성을 고려한 Store를 설계합니다.</p>
+                  <p>Zustand를 활용한 전역 상태 관리로 컴포넌트 간 상태 공유 구조를 단순화하고 props drilling을 제거합니다.</p>
+                  <p>TanStack Query로 서버 데이터 캐싱 및 중복 API 요청을 제거하여 불필요한 호출을 줄이고 렌더링 성능을 개선합니다.</p>
                 </div>
               </li>
               <li>
                 <h3 className={s.title}>
-                  <em>SCSS, CSS Module, TailwindCSS, Styled-Components</em>
+                  <em>Styling</em>
                 </h3>
                 <div className={s.description}>
-                  <p>SCSS, CSS Module, TailwindCSS, Styled-Components을 활용한 다양한 스타일링 경험이 있습니다.</p>
-                  <p>컴포넌트 기반 스타일링을 통해 유지보수성을 높이고, 프로젝트에 적합한 스타일링 방식을 선택하여 적용합니다.</p>
-                  <p>전역 스타일을 관리하고, 테마별 색상 및 크기 단위를 변수로 관리하여 유지보수성을 높입니다.</p>
-                  <p>반응형 디자인 구현과 next-themes를 활용한 다크 모드 적용 등, UI/UX 최적화를 위한 경험이 있습니다.</p>
+                  <p>SCSS 변수·믹스인 기반 스타일 모듈화로 다수 사이트의 스타일 일관성을 확보하고 유지보수성을 높입니다.</p>
+                  <p>모바일·태블릿·PC 대응 반응형 웹 구현 경험이 있으며, 브레이크포인트를 변수로 관리합니다.</p>
+                  <p>CSS Module, TailwindCSS, Styled-Components 등 다양한 스타일링 방식을 프로젝트에 맞게 선택하여 적용합니다.</p>
+                </div>
+              </li>
+              <li>
+                <h3 className={s.title}>
+                  <em>HTML/CSS</em>
+                </h3>
+                <div className={s.description}>
+                  <p>시맨틱 마크업을 기반으로 웹 표준과 접근성을 고려한 구조적인 HTML을 작성합니다.</p>
+                  <p>테이블 기반 레이아웃을 시맨틱 구조로 개선하고, SEO 친화적 마크업을 적용한 경험이 있습니다.</p>
+                  <p>크로스브라우저 호환성을 고려하며 다양한 브라우저·디바이스 환경에서 일관된 화면을 구현합니다.</p>
+                </div>
+              </li>
+              <li>
+                <h3 className={s.title}>
+                  <em>JavaScript / jQuery</em>
+                </h3>
+                <div className={s.description}>
+                  <p>탭·토글·슬라이드 등 인터랙티브 UI를 구현하고 정적 데이터 기반으로 동적 콘텐츠를 처리합니다.</p>
+                  <p>IntersectionObserver를 활용한 스크롤 진입 애니메이션 및 LazyLoadImage 적용으로 성능을 개선한 경험이 있습니다.</p>
+                </div>
+              </li>
+              <li>
+                <h3 className={s.title}>
+                  <em>Collaboration</em>
+                </h3>
+                <div className={s.description}>
+                  <p>Git/GitHub 기반 형상 관리 및 Jira 칸반 보드를 활용해 개발·기획·디자인 팀과 협업합니다.</p>
+                  <p>Figma·Photoshop을 활용하여 디자인 시안을 검토하고 퍼블리싱 작업에 반영합니다.</p>
                 </div>
               </li>
             </ul>
@@ -104,15 +131,17 @@ const About = () => {
               <li>
                 <h2 className={s.subTitle}>💻 경력</h2>
                 <h3 className={s.title}>
-                  <em>커넥트웨이브</em> <span>프론트엔드 개발자 2025.05 ~ 2026.03</span>
+                  <em>커넥트웨이브</em> <span>웹 퍼블리셔(React·Next.js 기반 UI 개발) 2025.05 ~ 2026.03</span>
                 </h3>
                 <div className={s.description}>
-                  <p>셀핏(AI 기반 상품 상세페이지 자동 생성 에디터) 프로젝트 참여</p>
-                  <p>상세페이지 스킨을 블록 단위 컴포넌트 구조로 설계하여 템플릿 확장성과 재사용성 확보</p>
-                  <p>버튼·모달 등 재사용 가능한 UI 컴포넌트 구현 및 디자인 가이드 기반 퍼블리싱으로 일관된 UI 구현에 기여</p>
-                  <p>React·Next.js 기반 자사 웹사이트 및 솔루션 유지보수 및 UI 컴포넌트 개선을 통해 UX 품질 향상</p>
-                  <p>이벤트·프로모션 페이지 퍼블리싱 및 다양한 브라우저·디바이스 환경을 고려한 반응형·접근성 개선 적용</p>
-                  <p>Git/GitHub 기반 형상 관리 및 배포 참여, Jira 협업을 통해 개발·기획·디자인 팀 간 커뮤니케이션 수행</p>
+                  <p>셀핏AI(상품 상세페이지 자동 생성 에디터) 프로젝트 참여</p>
+                  <p>상세페이지 스킨 28개 중 15개를 블록 단위 컴포넌트 구조로 설계 및 퍼블리싱, 템플릿 확장성과 재사용성 확보</p>
+                  <p>SVG 속성값을 데이터 파일로 분리하여 스킨 커스터마이징 구조 개선</p>
+                  <p>버튼·모달·배너 등 공용 UI 컴포넌트를 Zustand 기반으로 구현하고, 퍼블리싱 가이드 제작으로 일관된 UI 유지</p>
+                  <p>React·Next.js 기반 자사 웹사이트·솔루션 UI 구현 및 유지보수</p>
+                  <p>IntersectionObserver 기반 스크롤 진입 애니메이션 및 LazyLoadImage 적용으로 성능 개선</p>
+                  <p>이벤트·프로모션 페이지 반응형 퍼블리싱 및 크로스브라우저·접근성 개선 적용</p>
+                  <p>Git/GitHub 형상 관리 및 Jira 기반 개발·기획·디자인 팀 협업</p>
                 </div>
               </li>
               <li>
@@ -121,10 +150,12 @@ const About = () => {
                 </h3>
                 <div className={s.description}>
                   <p>총 37개 학회·대학 홈페이지와 논문 투고 시스템(JOSS) 구축 및 유지보수</p>
-                  <p>SCSS 기반 컴포넌트 단위 스타일 모듈화와 모바일·태블릿·PC 대응 반응형 웹 구현</p>
-                  <p>테이블 기반 레이아웃 마크업을 시멘틱 구조로 개선하고 SEO 친화적 마크업 적용</p>
-                  <p>디자이너·개발자와 협업하여 B2C 서비스 요구사항을 반영한 UI 개선 및 퍼블리싱 유지보수 수행</p>
-                  <p>robots.txt, 사이트맵 설정 및 검색 콘솔 등록을 통한 검색 노출 환경 구성</p>
+                  <p>SCSS 변수·믹스인 기반 스타일 모듈화로 모바일·태블릿·PC 대응 반응형 웹 구현</p>
+                  <p>테이블 기반 레이아웃을 시맨틱 구조로 전환하고 SEO 친화적 마크업 적용</p>
+                  <p>Google Search Console·네이버 서치어드바이저 등록 및 robots.txt·사이트맵 설정으로 검색 노출 환경 구성</p>
+                  <p>폼 마크업·비회원 분기 처리·결제 연동(이지페이·토스)으로 사전등록·회비납부 기능 구현</p>
+                  <p>학회와 직접 소통하며 요구사항 수집부터 DB 이전, 도메인 연결, SSL 적용까지 오픈 전 과정 주도적으로 조율</p>
+                  <p>한국보건행정학회 사전등록 개선: 다중 입력·비회원 결제 흐름 재설계로 전환율 24% 달성 (770건 중 187건)</p>
                 </div>
               </li>
               <li>
@@ -132,9 +163,10 @@ const About = () => {
                   <em>엔타스듀티프리</em> <span>웹 퍼블리셔 2019.04 ~ 2019.11</span>
                 </h3>
                 <div className={s.description}>
-                  <p>인터넷 면세점 사이트 유지보수 및 이벤트 페이지 퍼블리싱</p>
-                  <p>JSP 기반 환경에서 마크업 구조 개선 및 스타일 코드 정리를 통한 UI 일관성 개선</p>
-                  <p>기획·디자인·개발 팀과 협업하여 페이지 수정 및 기능 연동 지원</p>
+                  <p>인터넷 면세점 사이트 유지보수 및 이벤트·프로모션 페이지 퍼블리싱 수행</p>
+                  <p>JSP 기반 환경에서 마크업 구조 개선 및 스타일 코드 정리를 통해 UI 일관성 확보</p>
+                  <p>슬라이드·팝업·탭·플로팅 배너 등 인터랙티브 UI를 수정하고 PC·모바일 반응형 대응</p>
+                  <p>기획·디자인·개발 팀과 협업하여 기능 연동 지원</p>
                 </div>
               </li>
             </ul>

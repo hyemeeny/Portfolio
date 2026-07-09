@@ -84,7 +84,7 @@ const About = () => {
                   <em>JavaScript / jQuery</em>
                 </h3>
                 <div className={s.description}>
-                  <p>탭·토글·슬라이드 등 인터랙티브 UI를 구현하고 JSON 데이터 바인딩으로 동적 콘텐츠를 처리합니다.</p>
+                  <p>탭·토글·슬라이드 등 인터랙티브 UI를 구현하고 정적 데이터 기반으로 동적 콘텐츠를 처리합니다.</p>
                   <p>IntersectionObserver를 활용한 스크롤 진입 애니메이션 및 LazyLoadImage 적용으로 성능을 개선한 경험이 있습니다.</p>
                 </div>
               </li>
@@ -96,6 +96,15 @@ const About = () => {
                   <p>컴포넌트를 블록 단위로 설계하여 재사용성과 확장성을 고려한 UI 구조를 구현합니다.</p>
                   <p>Server Action·서버 컴포넌트 기반 데이터 패칭 구조 설계 및 React Query를 활용한 캐싱·성능 개선 경험이 있습니다.</p>
                   <p>Next.js App Router 환경에서 UI 구현 및 유지보수 경험이 있습니다.</p>
+                </div>
+              </li>
+              <li>
+                <h3 className={s.title}>
+                  <em>TypeScript</em>
+                </h3>
+                <div className={s.description}>
+                  <p>API 응답 타입을 명확히 정의하여 잘못된 요청을 사전에 방지하고, 안정성을 높입니다.</p>
+                  <p>컴포넌트와 페이지의 props 및 함수 인자에 타입을 지정하여 예상치 못한 오류를 사전에 예방합니다.</p>
                 </div>
               </li>
               <li>
@@ -113,7 +122,7 @@ const About = () => {
                 </h3>
                 <div className={s.description}>
                   <p>Git/GitHub 기반 형상 관리 및 Jira 칸반 보드를 활용해 개발·기획·디자인 팀과 협업합니다.</p>
-                  <p>Figma·Zeplin을 활용하여 디자인 시안을 검토하고 퍼블리싱 작업에 반영합니다.</p>
+                  <p>Figma·Photoshop을 활용하여 디자인 시안을 검토하고 퍼블리싱 작업에 반영합니다.</p>
                 </div>
               </li>
             </ul>
@@ -125,7 +134,7 @@ const About = () => {
                   <em>커넥트웨이브</em> <span>웹 퍼블리셔 2025.05 ~ 2026.03</span>
                 </h3>
                 <div className={s.description}>
-                  <p>셀핏AI(AI 기반 상품 상세페이지 자동 생성 에디터) 프로젝트 참여</p>
+                  <p>셀핏AI(상품 상세페이지 자동 생성 에디터) 프로젝트 참여</p>
                   <p>상세페이지 스킨 28개 중 15개를 블록 단위 컴포넌트 구조로 설계 및 퍼블리싱, 템플릿 확장성과 재사용성 확보</p>
                   <p>SVG 속성값을 데이터 파일로 분리하여 스킨 커스터마이징 구조 개선</p>
                   <p>버튼·모달·배너 등 공용 UI 컴포넌트 구현 및 퍼블리싱 가이드 제작으로 일관된 UI 유지</p>
