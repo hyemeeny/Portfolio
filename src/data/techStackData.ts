@@ -3,10 +3,11 @@ export const playAutoTechStack = [
   { id: 2, name: 'React' },
   { id: 3, name: 'TypeScript' },
   { id: 4, name: 'JavaScript' },
-  { id: 5, name: 'TailwindCSS' },
+  { id: 5, name: 'Styled-Components' },
   { id: 6, name: 'Zustand' },
-  { id: 7, name: 'TanStack Query' },
+  { id: 7, name: 'Git/GitHub' },
   { id: 8, name: 'Figma' },
+  { id: 9, name: 'Jira' },
 ];
 
 export const ksiTechStack = [
@@ -27,7 +28,8 @@ export const spaceLinkTechStack = [
   { id: 5, name: 'TailwindCSS' },
   { id: 6, name: 'Zustand' },
   { id: 7, name: 'TanStack Query' },
-  { id: 8, name: 'Figma' },
+  { id: 8, name: 'Git/GitHub' },
+  { id: 9, name: 'Figma' },
 ];
 
 export const travelmakerTechStack = [
@@ -37,5 +39,6 @@ export const travelmakerTechStack = [
   { id: 4, name: 'JavaScript' },
   { id: 5, name: 'SCSS Module' },
   { id: 6, name: 'Zustand' },
-  { id: 7, name: 'Figma' },
+  { id: 7, name: 'Git/GitHub' },
+  { id: 8, name: 'Figma' },
 ];
