@@ -131,13 +131,13 @@ const About = () => {
               <li>
                 <h2 className={s.subTitle}>💻 경력</h2>
                 <h3 className={s.title}>
-                  <em>커넥트웨이브</em> <span>웹 퍼블리셔 2025.05 ~ 2026.03</span>
+                  <em>커넥트웨이브</em> <span>웹 퍼블리셔(React·Next.js 기반 UI 개발) 2025.05 ~ 2026.03</span>
                 </h3>
                 <div className={s.description}>
                   <p>셀핏AI(상품 상세페이지 자동 생성 에디터) 프로젝트 참여</p>
                   <p>상세페이지 스킨 28개 중 15개를 블록 단위 컴포넌트 구조로 설계 및 퍼블리싱, 템플릿 확장성과 재사용성 확보</p>
                   <p>SVG 속성값을 데이터 파일로 분리하여 스킨 커스터마이징 구조 개선</p>
-                  <p>버튼·모달·배너 등 공용 UI 컴포넌트 구현 및 퍼블리싱 가이드 제작으로 일관된 UI 유지</p>
+                  <p>공용 UI 컴포넌트(버튼, 모달, 배너) 구현 및 Zustand 기반 상태 관리로 재사용성 개선, 퍼블리싱 가이드로 UI 일관성 유지</p>
                   <p>React·Next.js 기반 자사 웹사이트·솔루션 UI 구현 및 유지보수</p>
                   <p>IntersectionObserver 기반 스크롤 진입 애니메이션 및 LazyLoadImage 적용으로 성능 개선</p>
                   <p>이벤트·프로모션 페이지 반응형 퍼블리싱 및 크로스브라우저·접근성 개선 적용</p>
