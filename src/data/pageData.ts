@@ -250,17 +250,18 @@ export const spaceLinkData = [
   {
     title: '링크 및 폴더 기능',
     description: [
+      '데이터 요청 구조를 Server Action에서 React Query 기반으로 전환하여, 초기 진입 시에만 서버 컴포넌트에서 prefetchQuery와 HydrationBoundary로 데이터를 미리 채우고 이후 페이지네이션·검색·필터는 클라이언트 쿼리로 처리하도록 분리했습니다.',
       '공용 모달·입력 필드·버튼 컴포넌트를 설계하고 Zustand로 전역 모달 상태를 관리하여 일관된 UI와 재사용성을 확보했습니다.',
-      '추가·수정·삭제·즐겨찾기 등 다양한 사용자 인터랙션에 대응하는 UI를 구현하고, 각 액션에 맞는 모달 흐름과 상태 변화를 설계했습니다.',
-      '링크·폴더 데이터를 Promise.all로 병렬 패칭하고 revalidateTag로 캐시를 갱신하여 초기 로딩 속도와 데이터 최신성을 확보했습니다.',
+      '추가·수정·삭제·즐겨찾기 뮤테이션을 항목별 훅으로 분리하고, 계층화된 쿼리 키 구조로 invalidateQueries 범위를 세밀하게 제어해 캐시 정합성을 유지했습니다.',
+      '공용 모달 폼의 이벤트 처리 방식을 점검해 네이티브 제출로 인한 의도치 않은 페이지 이동을 방지하고, 모달 내부 선택 상태와 페이지 전역 뷰 상태를 분리해 상호 간섭 없이 동작하도록 개선했습니다.',
     ],
     image: '/images/spaceLink/link-folder.gif',
   },
   {
     title: '검색 기능',
     description: [
-      'URLSearchParams와 useRouter로 검색 조건을 URL에 동기화하여 새로고침·히스토리 이동·공유 시에도 동일한 검색 결과를 유지했습니다.',
-      'searchParams를 통해 서버 컴포넌트에서 URL 쿼리를 읽어 서버 사이드에서 검색 결과를 처리하고 초기 렌더링 성능을 개선했습니다.',
+      '검색 조건을 URLSearchParams와 history.replaceState로 URL에 직접 동기화하여, 불필요한 서버 컴포넌트 재요청 없이 새로고침·히스토리 이동·공유 시에도 동일한 검색 결과를 유지했습니다.',
+      'searchParams를 통해 서버 컴포넌트에서 URL 쿼리를 읽어 초기 진입 시 검색 결과를 서버 사이드에서 미리 채워 초기 렌더링 성능을 개선했습니다.',
     ],
     image: '/images/spaceLink/search.gif',
   },
