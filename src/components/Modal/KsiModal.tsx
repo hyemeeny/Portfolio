@@ -21,7 +21,7 @@ const KsiModal = () => {
       </div>
 
       <div className={s.pageWrap}>
-        <SubTitle participation='참여도 100%'>📺 논문 투고 시스템 운영 및 유지보수</SubTitle>
+        <SubTitle>📺 논문 투고 시스템 운영 및 유지보수</SubTitle>
         <div className={s.pageList}>
           {ksiJournalData.map((page: ModalPageProps) => (
             <article key={page.title} className={s.pageItem} aria-labelledby={`page-${page.title}`}>
@@ -53,7 +53,7 @@ const KsiModal = () => {
       </div>
 
       <div className={s.pageWrap}>
-        <SubTitle participation='참여도 100%'>📺 학회·대학 홈페이지 구축 및 유지보수 (37개 사이트)</SubTitle>
+        <SubTitle>📺 학회·대학 홈페이지 구축 및 유지보수 (37개 사이트)</SubTitle>
         <div className={s.pageList}>
           {ksiData.map((page: ModalPageProps) => (
             <article key={page.title} className={s.pageItem} aria-labelledby={`page-${page.title}`}>

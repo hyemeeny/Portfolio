@@ -21,7 +21,7 @@ const PlayAutoModal = () => {
       </div>
 
       <div className={s.pageWrap}>
-        <SubTitle participation='참여도 100%'>📺 AI 기반 상품 상세페이지 자동 생성 에디터</SubTitle>
+        <SubTitle>📺 AI 기반 상품 상세페이지 자동 생성 에디터</SubTitle>
         <div className={s.pageList}>
           {sellfitData.map((page: ModalPageProps) => (
             <article key={page.title} className={s.pageItem} aria-labelledby={`page-${page.title}`}>
@@ -51,7 +51,7 @@ const PlayAutoModal = () => {
       </div>
 
       <div className={s.pageWrap}>
-        <SubTitle participation='참여도 100%'>📺 자사 웹사이트·솔루션 운영 및 유지보수</SubTitle>
+        <SubTitle>📺 자사 웹사이트·솔루션 운영 및 유지보수</SubTitle>
         <div className={s.pageList}>
           {playAutoData.map((page: ModalPageProps) => (
             <article key={page.title} className={s.pageItem} aria-labelledby={`page-${page.title}`}>

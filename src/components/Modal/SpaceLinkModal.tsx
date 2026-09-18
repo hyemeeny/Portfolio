@@ -32,7 +32,7 @@ const SpaceLinkModal = () => {
       </div>
 
       <div className={s.pageWrap}>
-        <SubTitle participation='참여도 100%'>📺 작업 프로젝트</SubTitle>
+        <SubTitle>📺 작업 프로젝트</SubTitle>
         <div className={s.pageList}>
           {spaceLinkData.map((page: ModalPageProps) => (
             <article key={page.title} className={s.pageItem} aria-labelledby={`page-${page.title}`}>
