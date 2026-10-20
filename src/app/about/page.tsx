@@ -131,7 +131,7 @@ const About = () => {
               <li>
                 <h2 className={s.subTitle}>💻 경력</h2>
                 <h3 className={s.title}>
-                  <em>커넥트웨이브</em> <span>프론트엔드(UI 개발) 2025.05 ~ 2026.03</span>
+                  <em>커넥트웨이브</em> <span>UI 개발 및 웹 퍼블리싱 2025.05 ~ 2026.03</span>
                 </h3>
                 <div className={s.description}>
                   <p>셀핏AI(상품 상세페이지 자동 생성 에디터) 프로젝트 참여</p>
