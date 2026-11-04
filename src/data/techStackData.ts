@@ -30,6 +30,7 @@ export const spaceLinkTechStack = [
   { id: 7, name: 'TanStack Query' },
   { id: 8, name: 'Git/GitHub' },
   { id: 9, name: 'Figma' },
+  { id: 10, name: 'Storybook' },
 ];
 
 export const travelmakerTechStack = [
