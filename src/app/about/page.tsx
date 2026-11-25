@@ -177,7 +177,7 @@ const About = () => {
           <ul className={s.aboutbox}>
             <li>
               <h3 className={s.title}>
-                <em>코드잇 스프린트 프론트엔드 9기</em> <span>2024.07 ~ 20024.12</span>
+                <em>프론트엔드 엔지니어 부트캠프</em> <span>2024.07 ~ 20024.12</span>
               </h3>
               <div className={s.description}>
                 <p>Next.js, React, TypeScript, JavaScript, Git 등 프론트엔드 핵심 기술 심화 강의 수강</p>
